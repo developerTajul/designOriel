@@ -166,30 +166,29 @@ label {
   background: rgba(0, 0, 0, 0.5);
   z-index: 999; }
 
-.header-area {
-  background: rgba(0, 0, 0, 0.5); }
-  .header-area .main-menu ul li {
-    float: left; }
-    .header-area .main-menu ul li a {
-      font-size: 16px;
-      text-transform: capitalize;
-      font-weight: 400;
-      color: #484848;
-      padding-left: 25px;
-      text-decoration: none; }
-      .header-area .main-menu ul li a:hover {
-        color: #1273EB; }
-  .header-area .theme-btn {
-    padding-left: 50px; }
-    .header-area .theme-btn a {
-      background-color: #00BBFE;
-      padding: 15px 40px;
-      border-radius: 30px;
-      color: #fff;
-      text-decoration: navajowhite;
-      text-transform: capitalize; }
-      .header-area .theme-btn a i {
-        color: #00BBFE; }
+.header-area .main-menu ul li {
+  float: left; }
+  .header-area .main-menu ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: #484848;
+    padding-left: 25px;
+    text-decoration: none; }
+    .header-area .main-menu ul li a:hover {
+      color: #1273EB; }
+
+.header-area .theme-btn {
+  padding-left: 50px; }
+  .header-area .theme-btn a {
+    background-color: #00BBFE;
+    padding: 15px 40px;
+    border-radius: 30px;
+    color: #fff;
+    text-decoration: navajowhite;
+    text-transform: capitalize; }
+    .header-area .theme-btn a i {
+      color: #00BBFE; }
 
 /** mobile-menu **/
 .mean-container .mean-nav {
