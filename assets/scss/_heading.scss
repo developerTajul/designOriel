@@ -1,0 +1,44 @@
+/** section-heading style 1 **/
+.section-heading.style-1{
+    h5{
+        font-size: 14px;
+        color: #878787;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    h2{
+        font-size: 40px;
+        margin-bottom: 12px;
+        text-transform: capitalize;
+    }
+    p{
+        padding: 0 15px;
+    }
+}
+
+
+/** section-heading style 2 **/
+.section-heading.style-2{
+    h2{
+        font-size: 40px;
+        text-transform: capitalize;
+        position: relative;
+        padding-bottom: 10px;
+        margin-bottom: 25px;
+        &::before{
+            content: "";
+            background: #00AAFF;
+            width: 140px;
+            height: 5px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+    }
+    p{
+        padding: 0 15px;
+    }
+}
