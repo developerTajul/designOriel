@@ -35,6 +35,8 @@
 
         });
 
+
+
         // magnificPopup
         $('.popup-img').magnificPopup({
             type: 'image',
@@ -53,20 +55,20 @@
             arrows: false,
             fade: true,
             asNavFor: '.slider-nav',
-              autoplay: true
+            autoplay: false
           });
           $('.slider-nav').slick({
             asNavFor: '.slider-for',
             dots:false,
             centerMode: true,
             focusOnSelect: true,
-              infinite: true,
-              centerPadding: '0px',
+            infinite: true,
+            centerPadding: '0px',
             prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-angle-left"></i></button>',
-              nextArrow: '<button type="button" class="slick-next"><i class="fa fa-angle-right"></i></button>',
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              responsive: [
+            nextArrow: '<button type="button" class="slick-next"><i class="fa fa-angle-right"></i></button>',
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            responsive: [
                 {
                   breakpoint: 1024,
                   settings: {

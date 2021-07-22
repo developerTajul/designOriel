@@ -181,14 +181,11 @@ label {
 .header-area .theme-btn {
   padding-left: 50px; }
   .header-area .theme-btn a {
-    background-color: #00BBFE;
     padding: 15px 40px;
     border-radius: 30px;
     color: #fff;
-    text-decoration: navajowhite;
+    text-decoration: none;
     text-transform: capitalize; }
-    .header-area .theme-btn a i {
-      color: #00BBFE; }
 
 /** mobile-menu **/
 .mean-container .mean-nav {
@@ -460,6 +457,12 @@ label {
     color: green; }
 
 .portfolio-area .portfolio-wrapper .portfolio-thumb img {
+  width: 100%; }
+
+/**
+* Popular Products
+*/
+.popular-product-area .single-popular-product-item .popular-product-thumb img {
   width: 100%; }
 
 /** counter-area **/
