@@ -340,15 +340,8 @@ label {
 
 /* SM Small Device :550px. */
 /** section-heading style 1 **/
-.section-heading.style-1 h5 {
-  font-size: 14px;
-  color: #878787;
-  text-transform: uppercase;
-  font-weight: 400;
-  margin-bottom: 20px; }
-
 .section-heading.style-1 h2 {
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: 12px;
   text-transform: capitalize; }
 
@@ -462,8 +455,50 @@ label {
 /**
 * Popular Products
 */
-.popular-product-area .single-popular-product-item .popular-product-thumb img {
-  width: 100%; }
+.popular-product-area .single-popular-product-item {
+  position: relative;
+  overflow: hidden; }
+  .popular-product-area .single-popular-product-item .popular-product-thumb img {
+    width: 100%; }
+  .popular-product-area .single-popular-product-item .popular-product-content {
+    transition: .3s;
+    background-color: rgba(13, 110, 253, 0.8);
+    position: absolute;
+    top: 100%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+    .popular-product-area .single-popular-product-item .popular-product-content .icons {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0; }
+      .popular-product-area .single-popular-product-item .popular-product-content .icons a {
+        margin: 0 5px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        display: inline-block;
+        background-color: #00AAFF;
+        border-radius: 50%;
+        color: #fff; }
+        .popular-product-area .single-popular-product-item .popular-product-content .icons a i {
+          font-size: 20px; }
+        .popular-product-area .single-popular-product-item .popular-product-content .icons a:hover {
+          background-color: #fff;
+          color: #00AAFF; }
+  .popular-product-area .single-popular-product-item:hover .popular-product-content {
+    background-color: rgba(13, 110, 253, 0.3);
+    top: 0;
+    border-radius: 7px; }
+  .popular-product-area .single-popular-product-item:hover .popular-product-content .icons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0; }
 
 /** counter-area **/
 .counter-area .single-counter-item h6 {
