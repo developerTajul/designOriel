@@ -61,4 +61,16 @@
         }
 
     }
+
+    .theme-btn{
+        padding-left: 50px;
+        a{
+            // background-color: #00BBFE;
+            padding: 15px 40px;
+            border-radius: 30px;
+            color: #fff;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+    }
 }

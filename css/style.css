@@ -500,6 +500,15 @@ label {
     left: 0;
     right: 0; }
 
+.popular-product-area .theme-btn {
+  padding-left: 50px; }
+  .popular-product-area .theme-btn a {
+    padding: 15px 40px;
+    border-radius: 30px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize; }
+
 /** counter-area **/
 .counter-area .single-counter-item h6 {
   font-size: 40px;
