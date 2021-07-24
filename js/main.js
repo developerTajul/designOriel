@@ -9,6 +9,18 @@
             meanScreenWidth: "991"
         });
     
+        /** main-slider **/	
+		$('.best-selling-products').slick({
+			infinite: true,
+			dots: false,
+			arrows: true,
+			slidesToShow: 3,
+			autoplay: false,
+			autoplaySpeed: 10000,
+			slidesToScroll: 1,
+			nextArrow: '<i class="fas fa-chevron-left"></i>',
+			prevArrow: '<i class="fas fa-chevron-right"></i>',
+		});
 
         // portfolio active
         $('.portfolio-area').imagesLoaded( function() {
