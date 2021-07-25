@@ -1038,7 +1038,7 @@ label {
 }
 
 .testimonial-section .testimonial-content {
-  margin-top: 20px;
+  margin: 20px 50px 20px 0px;
 }
 
 .testimonial-section .testimonial-content h3 {
@@ -1178,7 +1178,7 @@ label {
 .slider-nav .slick-prev {
   position: absolute;
   top: 66%;
-  right: 4%;
+  left: 94%;
   z-index: 9;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -1193,15 +1193,19 @@ label {
   border: 1px solid #00aaff;
 }
 
-.slider-nav:hover {
+.slider-nav .slick-prev:hover {
   background: #00aaff;
   color: #fff;
+}
+
+.slider-nav .slick-prev:before {
+  content: '';
 }
 
 .slider-nav .slick-next {
   position: absolute;
   top: 50%;
-  right: 30px;
+  right: 0px;
   z-index: 9;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -1219,6 +1223,10 @@ label {
 .slider-nav .slick-next:hover {
   background: transparent;
   color: #00aaff;
+}
+
+.slider-nav .slick-next:before {
+  content: "";
 }
 
 .slider-for {
