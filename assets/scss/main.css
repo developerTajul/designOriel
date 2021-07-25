@@ -1471,8 +1471,12 @@ label {
 }
 
 .slider-for .slick-dots li {
+  position: relative;
   display: inline-block;
   margin: 0px 10px;
+  width: 70px;
+  height: 70px;
+  padding: 0;
 }
 
 .slider-for .slick-dots button {
