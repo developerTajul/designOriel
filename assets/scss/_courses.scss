@@ -4,7 +4,7 @@
     .single-course-item{
         background-color: #fff;
         .course-thumb{
-
+            width: 100%;
         }
 
         .couse-content-wrapper{
@@ -60,7 +60,9 @@
                 }
                 .price-link{
                     a{
-
+                        // background-color: #1273EB;
+                        padding: 10px 45px;
+                        border-radius: 30px;
                     }
                 }
             }
