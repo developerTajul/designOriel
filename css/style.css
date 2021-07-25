@@ -1503,7 +1503,7 @@ label {
 
 #slick-slide-control00 {
   position: absolute;
-  bottom: -10rem;
+  bottom: -30rem;
   background: #080202;
   padding: 5px;
   height: 70px;
@@ -1515,43 +1515,10 @@ label {
   animation: halfBounce 5s infinite;
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
+  left: -21%;
 }
 
 #slick-slide-control01 {
-  position: absolute;
-  left: -3rem;
-  background: #080202;
-  padding: 5px;
-  height: 70px;
-  width: 70px;
-  border: 0;
-  border-radius: 50%;
-  opacity: 0;
-  -webkit-animation: halfBounce 5s infinite;
-  animation: halfBounce 5s infinite;
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
-  top: -13rem;
-}
-
-#slick-slide-control02 {
-  position: absolute;
-  left: -6rem;
-  background: #080202;
-  padding: 5px;
-  height: 70px;
-  width: 70px;
-  border: 0;
-  border-radius: 50%;
-  opacity: 0;
-  -webkit-animation: halfBounce 5s infinite;
-  animation: halfBounce 5s infinite;
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
-  top: -13rem;
-}
-
-#slick-slide-control03 {
   position: absolute;
   left: -9rem;
   background: #080202;
@@ -1565,12 +1532,46 @@ label {
   animation: halfBounce 5s infinite;
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
-  top: -5rem;
+  top: 5rem;
+}
+
+#slick-slide-control02 {
+  position: absolute;
+  left: -9rem;
+  background: #080202;
+  padding: 5px;
+  height: 70px;
+  width: 70px;
+  border: 0;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-animation: halfBounce 5s infinite;
+  animation: halfBounce 5s infinite;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  top: 0rem;
+}
+
+#slick-slide-control03 {
+  position: absolute;
+  left: -12rem;
+  background: #080202;
+  padding: 5px;
+  height: 70px;
+  width: 70px;
+  border: 0;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-animation: halfBounce 5s infinite;
+  animation: halfBounce 5s infinite;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  top: 4rem;
 }
 
 #slick-slide-control04 {
   position: absolute;
-  left: -4rem;
+  left: -8rem;
   background: #080202;
   padding: 5px;
   height: 70px;
@@ -1582,24 +1583,7 @@ label {
   animation: halfBounce 5s infinite;
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
-  top: 8rem;
-}
-
-#slick-slide-control05 {
-  position: absolute;
-  left: 2rem;
-  background: #080202;
-  padding: 5px;
-  height: 70px;
-  width: 70px;
-  border: 0;
-  border-radius: 50%;
-  opacity: 0;
-  -webkit-animation: halfBounce 5s infinite;
-  animation: halfBounce 5s infinite;
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
-  top: -15rem;
+  top: 7rem;
 }
 
 /*animation style*/
