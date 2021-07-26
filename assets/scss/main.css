@@ -230,17 +230,11 @@ label {
 }
 
 .header-area .theme-btn a {
-  background-color: #00BBFE;
   padding: 15px 40px;
   border-radius: 30px;
   color: #fff;
-  -webkit-text-decoration: navajowhite;
-          text-decoration: navajowhite;
+  text-decoration: none;
   text-transform: capitalize;
-}
-
-.header-area .theme-btn a i {
-  color: #00BBFE;
 }
 
 /** mobile-menu **/
@@ -439,16 +433,8 @@ label {
 
 /* SM Small Device :550px. */
 /** section-heading style 1 **/
-.section-heading.style-1 h5 {
-  font-size: 14px;
-  color: #878787;
-  text-transform: uppercase;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-
 .section-heading.style-1 h2 {
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: 12px;
   text-transform: capitalize;
 }
@@ -599,6 +585,137 @@ label {
 
 .portfolio-area .portfolio-wrapper .portfolio-thumb img {
   width: 100%;
+}
+
+/**
+* Popular Products
+*/
+.popular-product-area .single-popular-product-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.popular-product-area .single-popular-product-item .popular-product-thumb img {
+  width: 100%;
+}
+
+.popular-product-area .single-popular-product-item .popular-product-content {
+  -webkit-transition: .3s;
+  transition: .3s;
+  background-color: rgba(13, 110, 253, 0.8);
+  position: absolute;
+  top: 100%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.popular-product-area .single-popular-product-item .popular-product-content .icons {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.popular-product-area .single-popular-product-item .popular-product-content .icons a {
+  margin: 0 5px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  display: inline-block;
+  background-color: #00AAFF;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.popular-product-area .single-popular-product-item .popular-product-content .icons a i {
+  font-size: 20px;
+}
+
+.popular-product-area .single-popular-product-item .popular-product-content .icons a:hover {
+  background-color: #fff;
+  color: #00AAFF;
+}
+
+.popular-product-area .single-popular-product-item:hover .popular-product-content {
+  background-color: rgba(13, 110, 253, 0.3);
+  top: 0;
+  border-radius: 7px;
+}
+
+.popular-product-area .single-popular-product-item:hover .popular-product-content .icons {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  right: 0;
+}
+
+.popular-product-area .theme-btn {
+  padding-left: 50px;
+}
+
+.popular-product-area .theme-btn a {
+  padding: 15px 40px;
+  border-radius: 30px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+/**
+* Best Selling Products
+*/
+.best-selling-products-area {
+  background-color: #F4F4F4;
+}
+
+.best-selling-products-area .best-selling-products {
+  margin: 0 -5px;
+}
+
+.best-selling-products-area .best-selling-products .single-best-item {
+  padding: 0 5px;
+}
+
+.best-selling-products-area .best-selling-products .single-best-item img {
+  border-radius: 5px;
+}
+
+.best-selling-products i.slick-arrow {
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 78;
+  background: #00AAFF;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+  border-radius: 50%;
+}
+
+.best-selling-products i.slick-arrow:hover {
+  background: #1373EB;
+}
+
+.best-selling-products i.fa-chevron-left {
+  top: 50%;
+  left: -100px;
+  font-size: 20px;
+}
+
+.best-selling-products i.fa-chevron-right {
+  top: 50%;
+  right: -100px;
+  font-size: 20px;
 }
 
 /** counter-area **/
@@ -975,6 +1092,10 @@ label {
   background-color: #fff;
 }
 
+.courses-area .single-course-item .course-thumb {
+  width: 100%;
+}
+
 .courses-area .single-course-item .couse-content-wrapper {
   padding: 20px;
 }
@@ -1012,6 +1133,111 @@ label {
   color: #999999;
 }
 
+.courses-area .single-course-item .couse-content-wrapper .price-info .price-link a {
+  padding: 10px 45px;
+  border-radius: 30px;
+}
+
+.courses-details-area {
+  background-color: #F4F4F4;
+}
+
+.courses-details-area .course-details .course-thumb img {
+  width: 100%;
+}
+
+.courses-details-area .course-details .course-meta-info .course-subtitle p {
+  font-size: 16px;
+  color: #484848;
+  font-weight: 300;
+  margin: 15px 0;
+}
+
+.courses-details-area .course-details .social-profiles ul li {
+  display: inline;
+  margin-left: 6px;
+}
+
+.courses-details-area .course-details .social-profiles ul li a {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 5px;
+  color: #C9C9C8;
+  border: 1px solid #CCCCCC;
+  font-size: 14px;
+}
+
+.courses-details-area .course-details .social-profiles ul li a:hover {
+  color: #fff;
+  background: #1273EB;
+  border: 1px solid #1273EB;
+}
+
+.courses-details-area .course-details .social-profiles ul li:first-child {
+  margin-left: 0;
+}
+
+.courses-details-area .course-overview-area .buy-info span {
+  padding: 10px 50px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.courses-details-area .course-overview-area .buy-info a {
+  padding: 10px 50px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.courses-details-area .course-overview-area .course-content {
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+}
+
+.courses-details-area .course-overview-area .course-content h3 {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+  background-color: #4AD395;
+  padding: 15px 0;
+  color: #fff;
+}
+
+.courses-details-area .course-overview-area .course-content ul {
+  background-color: #F4F4F4;
+}
+
+.courses-details-area .course-overview-area .course-content ul li {
+  border-bottom: 1px solid #CCCCCC;
+  padding: 16px 25px;
+}
+
+.courses-details-area .course-overview-area .course-content ul li .heading {
+  float: left;
+  width: 120px;
+  font-weight: 600;
+}
+
+.courses-details-area .course-overview-area .course-content ul li .content {
+  overflow: hidden;
+}
+
+.courses-details-area .course-overview-area .course-content ul li:last-child {
+  border-bottom: 0 solid #CCCCCC;
+}
+
 /* ----------------------------------
     Testimonial Section 
  ------------------------------------ */
@@ -1038,7 +1264,7 @@ label {
 }
 
 .testimonial-section .testimonial-content {
-  margin-top: 20px;
+  margin: 20px 50px 20px 0px;
 }
 
 .testimonial-section .testimonial-content h3 {
@@ -1178,7 +1404,7 @@ label {
 .slider-nav .slick-prev {
   position: absolute;
   top: 66%;
-  right: 4%;
+  left: 94%;
   z-index: 9;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -1193,15 +1419,19 @@ label {
   border: 1px solid #00aaff;
 }
 
-.slider-nav:hover {
+.slider-nav .slick-prev:hover {
   background: #00aaff;
   color: #fff;
+}
+
+.slider-nav .slick-prev:before {
+  content: '';
 }
 
 .slider-nav .slick-next {
   position: absolute;
   top: 50%;
-  right: 30px;
+  right: 0px;
   z-index: 9;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -1221,6 +1451,10 @@ label {
   color: #00aaff;
 }
 
+.slider-nav .slick-next:before {
+  content: "";
+}
+
 .slider-for {
   position: relative;
   width: 150px;
@@ -1237,8 +1471,12 @@ label {
 }
 
 .slider-for .slick-dots li {
+  position: relative;
   display: inline-block;
   margin: 0px 10px;
+  width: 70px;
+  height: 70px;
+  padding: 0;
 }
 
 .slider-for .slick-dots button {
@@ -1265,7 +1503,7 @@ label {
 
 #slick-slide-control00 {
   position: absolute;
-  bottom: -10rem;
+  bottom: -30rem;
   background: #080202;
   padding: 5px;
   height: 70px;
@@ -1277,43 +1515,10 @@ label {
   animation: halfBounce 5s infinite;
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
+  left: -21%;
 }
 
 #slick-slide-control01 {
-  position: absolute;
-  left: 1rem;
-  background: #080202;
-  padding: 5px;
-  height: 70px;
-  width: 70px;
-  border: 0;
-  border-radius: 50%;
-  opacity: 0;
-  -webkit-animation: halfBounce 5s infinite;
-  animation: halfBounce 5s infinite;
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
-  top: -15rem;
-}
-
-#slick-slide-control02 {
-  position: absolute;
-  left: -6rem;
-  background: #080202;
-  padding: 5px;
-  height: 70px;
-  width: 70px;
-  border: 0;
-  border-radius: 50%;
-  opacity: 0;
-  -webkit-animation: halfBounce 5s infinite;
-  animation: halfBounce 5s infinite;
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
-  top: -13rem;
-}
-
-#slick-slide-control03 {
   position: absolute;
   left: -9rem;
   background: #080202;
@@ -1327,12 +1532,29 @@ label {
   animation: halfBounce 5s infinite;
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
-  top: -5rem;
+  top: 5rem;
 }
 
-#slick-slide-control04 {
+#slick-slide-control02 {
   position: absolute;
-  left: -6rem;
+  left: -9rem;
+  background: #080202;
+  padding: 5px;
+  height: 70px;
+  width: 70px;
+  border: 0;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-animation: halfBounce 5s infinite;
+  animation: halfBounce 5s infinite;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  top: 0rem;
+}
+
+#slick-slide-control03 {
+  position: absolute;
+  left: -12rem;
   background: #080202;
   padding: 5px;
   height: 70px;
@@ -1347,9 +1569,9 @@ label {
   top: 4rem;
 }
 
-#slick-slide-control05 {
+#slick-slide-control04 {
   position: absolute;
-  left: 2rem;
+  left: -8rem;
   background: #080202;
   padding: 5px;
   height: 70px;
@@ -1361,7 +1583,7 @@ label {
   animation: halfBounce 5s infinite;
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
-  top: -15rem;
+  top: 7rem;
 }
 
 /*animation style*/

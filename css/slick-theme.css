@@ -119,7 +119,7 @@
     margin-bottom: 30px;
 }
 
-.slick-dots
+ .slick-dots
 {
     position: absolute;
     bottom: -25px;
@@ -164,7 +164,7 @@
     border: 0;
     outline: none;
     background: transparent;
-}
+} 
 .slick-dots li button:hover,
 .slick-dots li button:focus
 {
@@ -173,9 +173,9 @@
 .slick-dots li button:hover:before,
 .slick-dots li button:focus:before
 {
-    opacity: 1;
-}
-.slick-dots li button:before
+    opacity: 0;
+} 
+ .slick-dots li button:before
 {
     font-family: 'slick';
     font-size: 6px;
