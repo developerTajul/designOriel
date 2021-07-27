@@ -964,7 +964,6 @@ label {
     Testimonial Section 
  ------------------------------------ */
 .testimonial-section {
-  padding: 100px 0px;
   position: relative;
   overflow: hidden;
   z-index: 9; }
