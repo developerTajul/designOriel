@@ -748,9 +748,9 @@ label {
     height: 215px;
     border-radius: 50%; }
     .icon-section .icon h3 {
-      font-size: 22px;
+      font-size: 24px;
       font-weight: 400;
-      color: #000;
+      color: #303030;
       text-transform: capitalize;
       padding: 10px 0px;
       top: 100%;
@@ -817,7 +817,7 @@ label {
     position: relative;
     z-index: 9999; }
     .cta-area.style-1 .cta-text h2 {
-      font-size: 50px;
+      font-size: 48px;
       color: #fff;
       text-transform: capitalize;
       position: relative;
@@ -843,7 +843,7 @@ label {
     .cta-area.style-2 .cta-text h2::before {
       content: "";
       background: #fff;
-      width: 140px;
+      width: 100px;
       height: 5px;
       position: absolute;
       bottom: 0;
@@ -855,7 +855,9 @@ label {
     margin-bottom: 30px; }
   .cta-area.style-2 .cta-text .theme-btn a {
     color: #fff;
-    padding: 15px 55px; }
+    padding: 15px 55px;
+    font-weight: 500;
+    text-transform: capitalize; }
 
 /** courses-area **/
 .courses-area {
