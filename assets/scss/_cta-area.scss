@@ -67,7 +67,12 @@
         p{
             color: #fff;
             margin-bottom: 30px;
+            line-height: 36px;
+            span:first-child{
+                display: block;
+            }
         }
+
         .theme-btn{
             a{
                 color: #fff;

@@ -852,7 +852,10 @@ label {
       margin: 0 auto; }
   .cta-area.style-2 .cta-text p {
     color: #fff;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    line-height: 36px; }
+    .cta-area.style-2 .cta-text p span:first-child {
+      display: block; }
   .cta-area.style-2 .cta-text .theme-btn a {
     color: #fff;
     padding: 15px 55px;
