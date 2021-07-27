@@ -32,7 +32,7 @@
 
         .special-icon{
             position: absolute;
-            top: 20px;
+            top: 15px;
             left: 10px;
             background: #2A3842;
             width: 24px;
@@ -40,6 +40,9 @@
             line-height: 24px;
             border-radius: 3px;
             text-align: center;
+            visibility: hidden;
+            opacity: 0;
+            transition: .3s;
             i{
                 font-size: 12px;
                 color: #EB920D;
@@ -52,6 +55,9 @@
             left: 0;
             padding: 0 10px 10px;
             width: 100%;
+            visibility: hidden;
+            opacity: 0;
+            transition: .3s;
             h3{
                 font-size: 11px;
                 line-height: 1;
@@ -102,6 +108,9 @@
             position: absolute;
             top: 19px;
             right: 7px;
+            visibility: hidden;
+            opacity: 0;
+            transition: .3s;
             ul {
                 li {
                     margin-bottom: 5px;
@@ -110,13 +119,13 @@
                         height: 35px;
                         line-height: 35px;
                         border-radius: 3px;
-                        color: #010101;
+                        color: #484848;
                         display: inline-block;
                         text-align: center;
                         background: #fff;
                         &:hover{
                             color: #fff;
-                            background: #F26957;
+                            background: #00AAFF;
                         }
                     }
                     &:last-child{
@@ -124,6 +133,19 @@
                     }
                 }
             }
+        }
+
+        &:hover .special-icon{
+            visibility: visible;
+            opacity: 1;
+        }
+        &:hover .product-content{
+            visibility: visible;
+            opacity: 1;
+        }
+        &:hover .social-profiles{
+            visibility: visible;
+            opacity: 1;
         }
     }
 }

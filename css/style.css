@@ -406,14 +406,17 @@ label {
   position: relative; }
   .search-page-area .product-wrapper .special-icon {
     position: absolute;
-    top: 20px;
+    top: 15px;
     left: 10px;
     background: #2A3842;
     width: 24px;
     height: 24px;
     line-height: 24px;
     border-radius: 3px;
-    text-align: center; }
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s; }
     .search-page-area .product-wrapper .special-icon i {
       font-size: 12px;
       color: #EB920D; }
@@ -422,7 +425,10 @@ label {
     bottom: 0;
     left: 0;
     padding: 0 10px 10px;
-    width: 100%; }
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s; }
     .search-page-area .product-wrapper .product-content h3 {
       font-size: 11px;
       line-height: 1; }
@@ -459,7 +465,10 @@ label {
   .search-page-area .product-wrapper .social-profiles {
     position: absolute;
     top: 19px;
-    right: 7px; }
+    right: 7px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s; }
     .search-page-area .product-wrapper .social-profiles ul li {
       margin-bottom: 5px; }
       .search-page-area .product-wrapper .social-profiles ul li a {
@@ -467,15 +476,24 @@ label {
         height: 35px;
         line-height: 35px;
         border-radius: 3px;
-        color: #010101;
+        color: #484848;
         display: inline-block;
         text-align: center;
         background: #fff; }
         .search-page-area .product-wrapper .social-profiles ul li a:hover {
           color: #fff;
-          background: #F26957; }
+          background: #00AAFF; }
       .search-page-area .product-wrapper .social-profiles ul li:last-child {
         margin-bottom: 0; }
+  .search-page-area .product-wrapper:hover .special-icon {
+    visibility: visible;
+    opacity: 1; }
+  .search-page-area .product-wrapper:hover .product-content {
+    visibility: visible;
+    opacity: 1; }
+  .search-page-area .product-wrapper:hover .social-profiles {
+    visibility: visible;
+    opacity: 1; }
 
 /** section-heading style 1 **/
 .section-heading.style-1 h2 {
