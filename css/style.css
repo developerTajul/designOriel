@@ -495,6 +495,19 @@ label {
     visibility: visible;
     opacity: 1; }
 
+.search-page-area .theme-btn {
+  padding-left: 50px; }
+  .search-page-area .theme-btn a {
+    background-color: #1273EB;
+    border-color: #1273EB;
+    padding: 12px 50px;
+    border-radius: 7px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500; }
+
 /** section-heading style 1 **/
 .section-heading.style-1 h2 {
   font-size: 30px;
