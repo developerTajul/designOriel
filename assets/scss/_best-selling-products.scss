@@ -3,6 +3,13 @@
 */
 .best-selling-products-area{
     background-color: #F4F4F4;
+    .section-heading{
+        h2{
+            font-size: 48px;
+            color: #303030;
+            text-transform: capitalize;
+        }
+    }
     .best-selling-products{
         margin: 0 -5px;
         .single-best-item{

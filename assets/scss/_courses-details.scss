@@ -1,5 +1,4 @@
 .courses-details-area{
-    background-color: #F4F4F4;
     .course-details{
         .course-thumb{
             img{
@@ -20,6 +19,7 @@
 
         .social-profiles{
             ul {
+                margin-bottom: 0;
                 li {
                     display: inline;
                     margin-left: 6px;
