@@ -27,11 +27,12 @@
                 color: #303030;
                 text-transform: capitalize;
                 padding: 10px 0px;
-                top: 100%;
-                position: absolute;
-                left: 0;
-                right: 0;
+                // top: 100%;
+                // position: absolute;
+                // left: 0;
+                // right: 0;
             } 
+            
 
         }
 
@@ -41,9 +42,10 @@
         width: 100%;
         text-align: center;
         left: -30px;
-        bottom: 121px;
+        top: 145px;
         img { 
             width: 66%;
+            margin-bottom: 28px;
         }
     }
     

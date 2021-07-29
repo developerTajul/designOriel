@@ -1378,10 +1378,6 @@ label {
   color: #303030;
   text-transform: capitalize;
   padding: 10px 0px;
-  top: 100%;
-  position: absolute;
-  left: 0;
-  right: 0;
 }
 
 .work-progress-area .work-line {
@@ -1389,11 +1385,12 @@ label {
   width: 100%;
   text-align: center;
   left: -30px;
-  bottom: 121px;
+  top: 145px;
 }
 
 .work-progress-area .work-line img {
   width: 66%;
+  margin-bottom: 28px;
 }
 
 /** 
