@@ -149,6 +149,9 @@ label {
 .theme-bg-greyish {
   background-color: #F4F4F4; }
 
+.theme-bg-blue {
+  background-color: #00AAFF; }
+
 .header-transparent {
   position: absolute;
   top: 0;
@@ -1064,37 +1067,71 @@ label {
       text-transform: capitalize;
       font-weight: 500; }
 
-.cta-area.style-2 {
-  background-color: #00AAFF; }
-  .cta-area.style-2 .cta-text h2 {
-    font-size: 48px;
-    font-weight: 600;
-    color: #fff;
-    text-transform: capitalize;
-    position: relative;
-    margin-bottom: 15px;
-    padding-bottom: 20px; }
-    .cta-area.style-2 .cta-text h2::before {
-      content: "";
-      background: #fff;
-      width: 100px;
-      height: 5px;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: 0 auto; }
-  .cta-area.style-2 .cta-text p {
-    color: #fff;
-    margin-bottom: 30px;
-    line-height: 36px; }
-    .cta-area.style-2 .cta-text p span:first-child {
-      display: block; }
-  .cta-area.style-2 .cta-text .theme-btn a {
-    color: #fff;
-    padding: 15px 55px;
-    font-weight: 500;
-    text-transform: capitalize; }
+.cta-area.style-2 .cta-text h2 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: capitalize;
+  position: relative;
+  margin-bottom: 15px;
+  padding-bottom: 20px; }
+  .cta-area.style-2 .cta-text h2::before {
+    content: "";
+    background: #fff;
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto; }
+
+.cta-area.style-2 .cta-text p {
+  color: #fff;
+  margin-bottom: 30px;
+  line-height: 36px; }
+  .cta-area.style-2 .cta-text p span:first-child {
+    display: block; }
+
+.cta-area.style-2 .cta-text .theme-btn a {
+  color: #fff;
+  padding: 15px 55px;
+  font-weight: 500;
+  text-transform: capitalize; }
+
+.cta-area.style-3 .cta-text h2 {
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: capitalize;
+  position: relative;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+  color: #303030; }
+  .cta-area.style-3 .cta-text h2::before {
+    content: "";
+    background: #00AAFF;
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto; }
+
+.cta-area.style-3 .cta-text p {
+  color: #484848;
+  margin-bottom: 30px;
+  line-height: 36px; }
+  .cta-area.style-3 .cta-text p span {
+    display: block; }
+
+.cta-area.style-3 .cta-text .theme-btn a {
+  padding: 15px 55px;
+  font-weight: 500;
+  text-transform: capitalize;
+  display: block;
+  background-color: #1273EB;
+  border-color: #1273EB; }
 
 /** courses-area **/
 .courses-area {
