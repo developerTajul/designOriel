@@ -1378,6 +1378,7 @@ label {
   color: #303030;
   text-transform: capitalize;
   padding: 10px 0px;
+  text-align: center;
 }
 
 .work-progress-area .work-line {
