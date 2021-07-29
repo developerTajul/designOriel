@@ -524,8 +524,8 @@ label {
     right: 0;
     margin: 0 auto; }
 
-.section-heading.style-2 p {
-  padding: 0 15px; }
+.section-heading.style-2 p span {
+  display: block; }
 
 /** page breadcrumb **/
 .breadcrumb-area .page-title h3 {
