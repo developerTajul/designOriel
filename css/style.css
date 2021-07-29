@@ -1127,43 +1127,41 @@ label {
 
 .cta-area.style-3 .cta-text .theme-btn a {
   padding: 15px 55px;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: capitalize;
   display: block;
   background-color: #1273EB;
   border-color: #1273EB; }
 
 /** courses-area **/
-.courses-area {
-  background-color: #F4F4F4; }
-  .courses-area .single-course-item {
-    background-color: #fff; }
-    .courses-area .single-course-item .course-thumb {
-      width: 100%; }
-    .courses-area .single-course-item .couse-content-wrapper {
-      padding: 20px; }
-      .courses-area .single-course-item .couse-content-wrapper .course-rating-area {
-        font-size: 16px;
-        padding-bottom: 12px; }
-        .courses-area .single-course-item .couse-content-wrapper .course-rating-area .enrolled-students-num span {
-          color: #999999; }
-        .courses-area .single-course-item .couse-content-wrapper .course-rating-area .rating i {
-          color: #FAAF3A; }
-        .courses-area .single-course-item .couse-content-wrapper .course-rating-area .rating span {
-          color: #999999; }
-      .courses-area .single-course-item .couse-content-wrapper .course-content h3 {
-        font-size: 24px;
-        text-transform: capitalize;
-        font-weight: 600;
-        margin-bottom: 16px;
-        line-height: 32px; }
-      .courses-area .single-course-item .couse-content-wrapper .course-content .meta-info {
+.courses-area .single-course-item {
+  background-color: #fff; }
+  .courses-area .single-course-item .course-thumb {
+    width: 100%; }
+  .courses-area .single-course-item .couse-content-wrapper {
+    padding: 20px; }
+    .courses-area .single-course-item .couse-content-wrapper .course-rating-area {
+      font-size: 16px;
+      padding-bottom: 12px; }
+      .courses-area .single-course-item .couse-content-wrapper .course-rating-area .enrolled-students-num span {
         color: #999999; }
-      .courses-area .single-course-item .couse-content-wrapper .course-content .author-meta p {
+      .courses-area .single-course-item .couse-content-wrapper .course-rating-area .rating i {
+        color: #FAAF3A; }
+      .courses-area .single-course-item .couse-content-wrapper .course-rating-area .rating span {
         color: #999999; }
-      .courses-area .single-course-item .couse-content-wrapper .price-info .price-link a {
-        padding: 10px 45px;
-        border-radius: 30px; }
+    .courses-area .single-course-item .couse-content-wrapper .course-content h3 {
+      font-size: 24px;
+      text-transform: capitalize;
+      font-weight: 600;
+      margin-bottom: 16px;
+      line-height: 32px; }
+    .courses-area .single-course-item .couse-content-wrapper .course-content .meta-info {
+      color: #999999; }
+    .courses-area .single-course-item .couse-content-wrapper .course-content .author-meta p {
+      color: #999999; }
+    .courses-area .single-course-item .couse-content-wrapper .price-info .price-link a {
+      padding: 10px 45px;
+      border-radius: 30px; }
 
 .courses-details-area .course-details .course-thumb img {
   width: 100%; }
