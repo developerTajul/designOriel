@@ -35,3 +35,26 @@
         }
     }
 }
+
+
+/** section-heading style 2 **/
+.section-heading.style-3{
+    h2{
+        font-size: 48px;
+        text-transform: capitalize;
+        padding-bottom: 15px;
+        color: #fff;
+    }
+    p{
+        color: #fff;
+        span{
+            display:block;
+        }
+    }
+}
+
+.section-heading-area.style-3{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}

@@ -527,6 +527,23 @@ label {
 .section-heading.style-2 p span {
   display: block; }
 
+/** section-heading style 2 **/
+.section-heading.style-3 h2 {
+  font-size: 48px;
+  text-transform: capitalize;
+  padding-bottom: 15px;
+  color: #fff; }
+
+.section-heading.style-3 p {
+  color: #fff; }
+  .section-heading.style-3 p span {
+    display: block; }
+
+.section-heading-area.style-3 {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
 /** page breadcrumb **/
 .breadcrumb-area .page-title h3 {
   font-size: 30px;
