@@ -1386,12 +1386,16 @@ label {
   width: 100%;
   text-align: center;
   left: -30px;
-  top: 145px;
+  bottom: 145px;
 }
 
 .work-progress-area .work-line img {
   width: 66%;
   margin-bottom: 28px;
+}
+
+.work-wrapper:nth-child(2n) {
+  margin-top: 50px;
 }
 
 /** 
