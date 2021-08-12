@@ -1,0 +1,233 @@
+/** flayer-details-area ***/
+.flayer-details-area{
+    .service-item-active{
+        
+        .single-brand-item{
+            
+            img{
+
+            }
+        }
+        
+    }
+
+    .services-nav{
+        margin: 0 -5px;
+        .single-service-item{
+            padding: 0 5px;
+            .service-thumb{
+                img{
+
+                }
+            }
+        }
+    }
+
+    .flyer-details{
+        .flyer-thumb{
+
+        }
+        .flyer-meta-info{
+            .flyer-status{
+                span{
+                    background-color: #1373EB;
+                    padding: 8px 85px;
+                    border-radius: 5px;
+                    color: #fff;
+                    display: inline-block;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+                span.premium{
+                    padding: 8px 65px;
+                }
+            }
+            .social-profiles{
+                ul {
+                    margin-bottom: 0;
+                    li {
+                        display: inline;
+                        margin-left: 6px;
+                        a{
+                            width: 40px;
+                            height: 40px;
+                            line-height: 40px;
+                            text-align: center;
+                            display: inline-block;
+                            border-radius: 5px;
+                            color: #C9C9C8;
+                            border: 1px solid #CCCCCC;
+                            font-size: 14px;
+                
+                            &:hover{
+                                color: #fff;
+                                background: #1273EB;
+                                border: 1px solid #1273EB;
+                            }
+                        }
+                        &:first-child{
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .flyer-download{
+            .theme-btn{
+                a{
+                    background-color: #4AD395;
+                    border-color: #4AD395;
+                    padding: 15px 30px;
+                    border-radius: 7px;
+                    color: #fff;
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    font-size: 16px;
+                    font-weight: 500;
+                    display: block;
+                    text-align: center;
+                }
+            }
+        }
+
+
+        .flyer-desc{
+            background-repeat: no-repeat;
+            background-position: 3px 7px;
+            ul{
+                
+                li{
+                    margin-bottom: 6px;
+                    font-size: 16px;
+                    padding-left: 20px;
+                    span{
+                        font-weight: 600;
+                        padding-right: 20px;
+                        width: 130px;
+                        display: inline-block;
+                    }
+                    &:last-child{
+                        margin-bottom: 0;
+                        overflow: hidden;
+                    }
+                    &:last-child span{
+                        height: 100px;
+                        float: left;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+.flyer-content-desc{
+    padding-right: 70px;
+    h3{
+        font-size: 24px;
+        color: #303030;
+        margin-bottom: 5px;
+    }
+
+    p{
+        color: #484848;
+        line-height: 30px;
+        span{
+            display:block;
+            clear: both;
+        }
+    }
+
+    ul{
+        li{
+            color: #484848;
+            line-height: 30px;
+        }
+    }
+} 
+.adevertisement{
+    height: 100%;
+}
+
+
+// slider arrow
+.service-item-active i.slick-arrow {
+    position: absolute;
+    transform: translateY(-50%);
+    z-index: 78;
+    background: #00AAFF;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 50%;
+}
+.service-item-active i.slick-arrow:hover {
+	background: #1373EB;
+}
+.service-item-active i.fa-chevron-left {
+    top: 50%;
+    left: 10px;
+    font-size: 20px;
+}
+.service-item-active i.fa-chevron-right {
+    top: 50%;
+	right: 10px;
+    font-size: 20px;
+}
+
+
+/** responsive css **/ 
+/* XL Device :1200px. */
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+
+}
+
+/* LG Device :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+}
+
+
+/* MD Device :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .flayer-details-area .services-nav {
+        margin: 0 -5px 30px;
+    }
+    .flayer-details-area .flyer-details .flyer-desc ul li:last-child span {
+        height: inherit;
+    }
+    .best-selling-products-area .section-heading h2 {
+        font-size: 30px;
+    }
+
+}
+
+
+/* Extra small Device. */
+@media (max-width: 767px) {
+    .flayer-details-area .services-nav {
+        margin: 0 -5px 30px;
+    }
+    .flayer-details-area .flyer-details .flyer-meta-info .flyer-status span {
+        padding: 8px 50px;
+    }
+
+    .service-item-active i.slick-arrow {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+    
+}
+
+/* SM Small Device :550px. */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+
+}

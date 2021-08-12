@@ -1,0 +1,128 @@
+.work-progress-area {
+    position: relative;
+    background: #f1f5fe;
+    .work-wrapper{
+		position: relative;
+		z-index: 9999;
+        .work-content{
+            .work{
+                position: relative;
+                background: #1373eb;
+                width: 215px;
+                height: 215px;
+                border-radius: 50%; 
+                img{ 
+                    position: absolute;
+                    top: 50%;
+                    -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                } 
+                
+            
+            }
+            h3{
+                font-size: 24px;
+                font-weight: 400;
+                color: #303030;
+                text-transform: capitalize;
+                padding: 10px 0px;
+                text-align: center;
+            } 
+            
+        }
+
+    }
+    .work-line {
+		position: absolute;
+		width: auto;
+		text-align: center;
+		left: 0;
+		top: 50%;
+		right: 0;
+		transform: translateY(-50%);
+        img { 
+			width: auto;
+			margin-bottom: 28px;
+        }
+    }
+    
+}
+
+
+.work-wrapper:nth-child(2n){
+    margin-top: 50px; 
+}
+
+
+/** responsive css **/ 
+/* XL Device :1200px. */
+@media (min-width: 1200px) and (max-width: 1400px) {
+
+
+}
+
+/* LG Device :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+	.work-progress-area .work-line img {
+		width: 80%;
+		margin-bottom: 28px;
+	}
+}
+
+
+/* MD Device :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+	.work-progress-area {
+		overflow: hidden;
+		padding-bottom: 50px;
+	}
+
+	.work-progress-area .work-wrapper {
+		position: relative;
+		width: 48%;
+		float: left;
+		overflow: hidden;
+		margin-bottom: 35px;
+	}
+
+	.work-progress-area .work-wrapper .work-content .work {
+		margin: 0 auto;
+	}
+
+	.work-wrapper:nth-child(2n) {
+		margin-top: 0;
+	}
+
+}
+
+
+/* Extra small Device. */
+@media (max-width: 767px) {
+	.work-progress-area {
+		overflow: hidden;
+		padding-bottom: 50px;
+	}
+	.work-progress-area .work-wrapper .work-content .work {
+		margin: 0 auto;
+	}
+	.work-wrapper:nth-child(2n) {
+		margin-top: 0;
+	}
+	.work-progress-area .work-wrapper {
+		margin-bottom: 35px;
+	}
+}
+
+/* SM Small Device :550px. */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+
+
+}
+
+
+
+

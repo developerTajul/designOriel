@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("../fonts/flaticon.ttf?39fa1d4f3a67453a2f55415e508e1fe3") format("truetype"),
+url("../fonts/flaticon.woff?39fa1d4f3a67453a2f55415e508e1fe3") format("woff"),
+url("../fonts/flaticon.woff2?39fa1d4f3a67453a2f55415e508e1fe3") format("woff2"),
+url("../fonts/flaticon.eot?39fa1d4f3a67453a2f55415e508e1fe3#iefix") format("embedded-opentype"),
+url("../fonts/flaticon.svg?39fa1d4f3a67453a2f55415e508e1fe3#flaticon") format("svg");
+}
+
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-left-chevron:before {
+    content: "\f101";
+}
+.flaticon-left-arrow:before {
+    content: "\f102";
+}
+.flaticon-left-arrow-1:before {
+    content: "\f103";
+}
+.flaticon-right-arrow-angle:before {
+    content: "\f104";
+}
+.flaticon-right-chevron:before {
+    content: "\f105";
+}
+.flaticon-suitcase:before {
+    content: "\f106";
+}
+.flaticon-monitor:before {
+    content: "\f107";
+}
+.flaticon-printer:before {
+    content: "\f108";
+}

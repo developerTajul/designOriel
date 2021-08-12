@@ -1,0 +1,115 @@
+/** section-heading style 1 **/
+.section-heading.style-1{
+    h2{
+        font-size: 30px;
+        text-transform: capitalize;
+        color: #303030;
+    }
+}
+
+
+/** section-heading style 2 **/
+.section-heading.style-2{
+    h2{
+        font-size: 48px;
+        text-transform: capitalize;
+        position: relative;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        color: #303030;
+        &::before{
+            content: "";
+            background: #00AAFF;
+            width: 100px;
+            height: 5px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            border-radius: 30px;
+        }
+    }
+    p{
+        color: #484848;
+        line-height: 26px;
+        span{
+            display:block;
+        }
+    }
+}
+
+
+/** section-heading style 2 **/
+.section-heading.style-3{
+    h2{
+        font-size: 48px;
+        text-transform: capitalize;
+        padding-bottom: 15px;
+        color: #fff;
+    }
+    p{
+        color: #fff;
+        span{
+            display:block;
+        }
+    }
+}
+
+.section-heading-area.style-3{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+/** responsive css **/ 
+/* XL Device :1200px. */
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .section-heading.style-3 p span {
+        display: inline-block;
+    }
+}
+
+/* LG Device :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .section-heading.style-3 p span {
+        display: inline-block;
+    }
+}
+
+
+/* MD Device :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .section-heading.style-3 p span {
+        display: inline-block;
+    }
+    
+
+}
+
+
+/* Extra small Device. */
+@media (max-width: 767px) {
+    .section-heading.style-2 h2 {
+        font-size: 32px;
+    }
+    .section-heading.style-3 p span {
+        display: inline-block;
+    }
+
+    .section-heading.style-3 h2 {
+        font-size: 32px;
+    }
+    .cta-area.style-3 .cta-text p span {
+        display: inline;
+    }
+}
+
+/* SM Small Device :550px. */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+
+}

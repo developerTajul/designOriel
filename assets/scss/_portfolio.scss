@@ -1,0 +1,109 @@
+.portfolio-area{
+    .section-title{
+        h2{
+            font-size: 48px;
+            font-weight: 600;
+        }
+    }
+    .portfolio-menu{
+        button{
+            background: none;
+            border: inherit;
+            font-size: 16px;
+            color: #484848;
+            margin: 0 3px;
+            &.active{
+                color: #1273EB;
+            }
+        }
+    }
+    .portfolio-wrapper{
+        position: relative;
+        .overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: "";
+            background-color: rgba(0, 187, 254, .9);
+            opacity: 0;
+            visibility: hidden;
+            transition: .3s;
+        }
+
+        .portfolio-thumb{
+            img {
+                width: 100%;
+            }
+            
+        }
+        
+        .portfolio-content{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            right: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: .3s;
+            .icon{
+                i{
+                    color: #fff;
+                }
+            }
+            h3{
+                color: #fff;
+                a{
+                    text-decoration: none;
+                }
+            }
+            span{
+                color: #fff;
+            }
+        }
+    
+        &:hover .overlay{
+            opacity: 1;
+            visibility: visible;
+        }
+        &:hover .portfolio-content{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+
+
+/** responsive css **/ 
+/* XL Device :1200px. */
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+
+}
+
+/* LG Device :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+}
+
+
+/* MD Device :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+}
+
+
+/* Extra small Device. */
+@media (max-width: 767px) {
+
+}
+
+/* SM Small Device :550px. */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+
+}

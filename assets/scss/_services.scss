@@ -1,0 +1,164 @@
+/** service-area **/
+.services-area {
+    .single-service-item.style-1{
+        .service-thumb{
+            margin-bottom: 34px;
+            img {
+                width: 100%;
+            }
+        }
+        .service-content{
+            h3{
+                font-size: 20px;
+                text-transform: uppercase;
+                margin-bottom: 16px;
+            }
+            p {
+                margin-bottom: 10px;
+            }
+            .theme-btn a{
+                font-size: 13px;
+                line-height: 26px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #444444;
+            }
+        }
+    }
+
+}
+
+
+
+.services-area.style-2 {
+    position: relative;
+    z-index: 99;
+    .single-service-item {
+        background-color: #F4F4F4;
+        border: 1px solid #F4F4F4;
+        padding: 52px 46px 40px;
+        transition: .3s;
+        border-radius: 10px;
+        .service-icon{
+            margin-bottom: 17px;
+            a{
+                width: 100px;
+                height: 100px;
+                display: inline-block;
+                background-color: #00AAFF;
+                position: relative;
+                border-radius: 50%;
+                color: #fff;
+                i{
+                    font-size: 50px;
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    right: 0;
+                    transform: translateY(-50%);
+                    width: 50px;
+                    height: 50px;
+                    margin: 0 auto;
+                    line-height: 50px;
+                }
+                &:hover{
+                    background-color: #fff;
+                    color: #00AAFF;
+                }
+            }
+
+        }
+        .service-content{
+            h3{
+                font-size: 30px;
+                font-weight: 600;
+                color: #303030;
+                margin-bottom: 20px;
+                text-transform: capitalize;
+            }
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 26px;
+                color: #484848;
+            }
+        }
+        &:hover {
+            box-shadow: 0px 0px 27px 3px rgba(0, 0, 0, 0.1);
+            background-color: #00AAFF;
+            border: 1px solid #00AAFF;
+        }
+        &.active {
+            box-shadow: 0px 0px 27px 3px rgba(0, 0, 0, 0.1);
+            background-color: #00AAFF;
+            border: 1px solid #00AAFF;
+        }
+        &.active .service-content h3{
+            color: #fff;
+        }
+        &.active .service-content p{
+            color: #fff;
+        }
+        &.active .service-icon a{
+            background-color: #fff;
+            color: #00AAFF;
+        }
+        &:hover .service-content h3{
+            color: #fff;
+        }
+        &:hover .service-content p{
+            color: #fff;
+        }
+        &:hover .service-icon a{
+            background-color: #fff;
+            color: #00AAFF;
+        }
+    }
+}
+
+
+
+/** responsive css **/ 
+/* XL Device :1200px. */
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+
+}
+
+/* LG Device :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+}
+
+
+/* MD Device :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .section-heading.style-2 p span {
+        display: inline-block;
+    }
+    .services-area.style-2 .single-service-item {
+        padding: 52px 20px 40px;
+    }
+    .services-area.style-2 .single-service-item .service-content h3 {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+}
+
+
+/* Extra small Device. */
+@media (max-width: 767px) {
+    .section-heading.style-2 p span {
+        display: inline;
+    }
+    .services-area.style-2 .single-service-item {
+        padding: 52px 20px 40px;
+    }
+}
+
+/* SM Small Device :550px. */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+
+}

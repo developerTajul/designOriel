@@ -1,0 +1,204 @@
+.header-transparent{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 999;;
+}
+
+.header-area{
+   
+    .main-menu{
+        ul{
+            li{
+                float: left;
+                position: relative;
+                a{
+                    
+                    text-transform: capitalize;
+                    font-weight: 400;
+                    text-decoration: none;
+                    &:hover {
+                        color: #1273EB;
+                    }
+                }
+            }
+
+            &> li a{
+                font-size: 16px;
+                color: #484848;
+                padding: 48px 0 48px 25px;
+                display: block;
+            }
+            
+
+        }
+    }
+
+
+    .theme-btn{
+        padding-left: 25px;
+        a{
+            background-color: #00BBFE;
+            border-color: #00BBFE;
+            padding: 12px 45px;
+            border-radius: 30px;
+            color: #fff;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+    }
+}
+
+
+/** dropdown 1**/
+.main-menu ul ul.submenu{
+    width: 250px;
+    background-color: #fff;
+    border: 0 solid red;
+    position: absolute;
+    top: 115%;
+    left: 0;
+    z-index: 999999;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    border-radius: 5px;
+}
+.main-menu ul li:hover > ul.submenu{
+    top: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+.main-menu ul ul.submenu li{
+    float: none;
+    border-bottom: .5px solid #DEDEDE;
+}
+.main-menu ul ul.submenu li:hover{
+   background-color: #F4F4F4;
+}
+.main-menu ul ul.submenu li:last-child{
+    border-bottom: 0 solid #DEDEDE;
+    border-radius: 0 0 5px 5px;
+}
+.main-menu ul ul.submenu li a{
+    padding: 10px 20px;
+    color: #484848;
+    font-size: 14px;
+    font-weight: 400;
+}
+.main-menu ul ul.submenu li:hover a{
+    padding: 10px 20px;
+    border-radius: 0 0 5px 5px;
+}
+/** dropdown 2**/
+.main-menu ul ul.submenu ul.submenu{
+    top: 110%;
+    left: 100%;
+}
+.main-menu ul ul.submenu li:hover > ul.submenu{
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.main-menu ul ul.submenu ul.submenu li a{
+    padding: 10px 20px;
+    color: #888888;
+}
+.main-menu ul ul.submenu ul.submenu li:hover a{
+    padding: 10px 20px;
+    color: #fff;
+}
+/** dropdown 2**/
+.main-menu ul ul.submenu ul.submenu li:hover > ul.submenu{
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.main-menu ul ul.submenu ul.submenu ul.submenu li a{
+    padding: 10px 20px;
+    color: #888888;
+}
+.main-menu ul ul.submenu ul.submenu ul.submenu li:hover a{
+    padding: 10px 20px;
+    color: #fff;
+}
+
+
+
+
+/** mobile-menu **/
+.mean-container .mean-nav {
+	background: #fff;
+}
+.mobile-menu.mean-container {
+    width: 100%;
+}
+.mean-container .mean-bar {
+    min-height: 0;
+    margin-top: -75px;
+    background: transparent;
+}
+.mean-container .mean-nav {
+    float: left;
+    width: 100%;
+    margin-top: 68px;
+    position: absolute;
+}
+
+.mean-container a.meanmenu-reveal {
+	border: 1px solid #000;
+	color: #000;
+    top: 0;
+    text-indent: inherit;
+}
+
+.mean-container a.meanmenu-reveal span {
+    background: #000;
+}
+.mean-container .mean-nav ul li a {
+	display: block;
+	float: left;
+	width: 90%;
+	padding: 1em 5%;
+	margin: 0;
+	text-align: left;
+	color: #000;
+	border-top: 1px solid #807373;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+
+/** responsive css **/ 
+/* XL Device :1200px. */
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+
+}
+
+/* LG Device :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+}
+
+
+/* MD Device :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .mean-container a.meanmenu-reveal {
+        top: -10px;
+    }
+}
+
+
+/* Extra small Device. */
+@media (max-width: 767px) {
+
+}
+
+/* SM Small Device :550px. */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+
+}
