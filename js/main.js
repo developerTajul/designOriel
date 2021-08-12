@@ -210,11 +210,11 @@
     	// nice select
     	$('select').niceSelect();
 
-
+		/** active class on last item */
 		$(document).on('mouseover','.single-service-item',function() {
-        $(this).addClass('active');
-        $('.single-service-item').removeClass('active');
-        $(this).addClass('active');
+			$(this).addClass('active');
+			$('.single-service-item').removeClass('active');
+			$(this).addClass('active');
 		});
 
 	});

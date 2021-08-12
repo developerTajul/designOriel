@@ -296,6 +296,14 @@ label {
 
 /* Extra small Device. */
 /* SM Small Device :550px. */
+.button-area .theme-btn a {
+  width: 168px;
+  height: 48px;
+  padding: 0;
+  line-height: 48px;
+  font-size: 16px;
+  font-weight: 600; }
+
 /** style-1 **/
 .advanced-search-area {
   background-position: center center;
@@ -956,23 +964,6 @@ label {
     transform: translateY(-50%);
     left: 0;
     right: 0; }
-
-.popular-product-area .theme-btn {
-  padding-left: 50px; }
-  .popular-product-area .theme-btn a {
-    background-color: #1273EB;
-    border-color: #1273EB;
-    padding: 0;
-    border-radius: 7px;
-    color: #fff;
-    text-decoration: none;
-    text-transform: capitalize;
-    font-size: 16px;
-    font-weight: 500;
-    width: 168px;
-    height: 48px;
-    line-height: 48px;
-    box-sizing: border-box; }
 
 /** responsive css **/
 /* XL Device :1200px. */
