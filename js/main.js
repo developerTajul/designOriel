@@ -3,13 +3,13 @@
 	jQuery(document).ready(function(){
 
 
-    // meanmenu
-    jQuery('#mobile-menu').meanmenu({
-        meanMenuContainer: '.mobile-menu',
-        meanScreenWidth: "991"
-    });
+		// meanmenu
+		jQuery('#mobile-menu').meanmenu({
+			meanMenuContainer: '.mobile-menu',
+			meanScreenWidth: "991"
+		});
     
-    /** main-slider **/	
+    	/** main-slider **/	
 		$('.best-selling-products').slick({
 			infinite: true,
 			dots: false,
@@ -46,7 +46,7 @@
             ]
 		});
     
-    /** main-slider **/	
+    	/** main-slider **/	
 		$('.best-selling-products-style-2').slick({
 			infinite: true,
 			dots: false,
@@ -57,6 +57,30 @@
 			slidesToScroll: 1,
 			nextArrow: '<i class="fas fa-chevron-left"></i>',
 			prevArrow: '<i class="fas fa-chevron-right"></i>',
+			responsive: [
+                {
+                  breakpoint: 1024,
+                  settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                  }
+                },
+                {
+                  breakpoint: 991,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                  }
+                },
+                {
+                  breakpoint: 480,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                  }
+                }
+            ]
 		});
 
         // portfolio active
@@ -137,59 +161,61 @@
 
         // services slider having two parts / sections
         $('.service-item-active').slick({
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: false,
-          arrows: true,
-		      infinite: true,
-          asNavFor: '.services-nav',
-          prevArrow:'<i class="fas fa-chevron-left"></i>',
-          nextArrow:'<i class="fas fa-chevron-right"></i>',
-      });
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			dots: false,
+			arrows: true,
+			infinite: true,
+			asNavFor: '.services-nav',
+			prevArrow:'<i class="fas fa-chevron-left"></i>',
+			nextArrow:'<i class="fas fa-chevron-right"></i>',
+      	});
 
-      $('.services-nav').slick({
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          asNavFor: '.service-item-active',
-          dots: false,
-          arrows: false,
-          focusOnSelect: true,
-          centerPadding:0,
-		      infinite: true,
-          responsive: [
-              {
-                  breakpoint: 1200,
-                  settings: {
-                      slidesToShow: 3,
-                      slidesToScroll: 1,
-                      infinite: true,
-                      dots: false
-                  }
-              },
-              {
-                  breakpoint: 768,
-                  settings: {
-                      slidesToShow: 2,
-                      slidesToScroll: 1
-                  }
-              },
-              {
-                  breakpoint: 375,
-                  settings: {
-                      slidesToShow: 2,
-                      slidesToScroll: 1
-                  }
-              },
-          ]
-      });
+		$('.services-nav').slick({
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			asNavFor: '.service-item-active',
+			dots: false,
+			arrows: false,
+			focusOnSelect: true,
+			centerPadding:0,
+			infinite: true,
+			responsive: [
+				{
+					breakpoint: 1200,
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 1,
+						infinite: true,
+						dots: false
+					}
+				},
+				{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 1
+					}
+				},
+				{
+					breakpoint: 375,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 1
+					}
+				},
+			]
+		});
 
-      // nice select
-      $('select').niceSelect();
+    	// nice select
+    	$('select').niceSelect();
 
-      $('.single-service-item').hover(
-        function(){ $(this).addClass('active') },
-        function(){ $(this).removeClass('active') }
-      );
+
+		$(document).on('mouseover','.single-service-item',function() {
+        $(this).addClass('active');
+        $('.single-service-item').removeClass('active');
+        $(this).addClass('active');
+		});
 
 	});
 
