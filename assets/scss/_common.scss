@@ -42,6 +42,15 @@ textarea:focus,
 button:focus {
   outline: 0 none;
 }
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: none!important;
+    box-shadow: none;
+}
 h1,
 h2,
 h3,

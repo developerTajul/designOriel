@@ -56,6 +56,15 @@ textarea:focus,
 button:focus {
   outline: 0 none; }
 
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none !important;
+  box-shadow: none; }
+
 h1,
 h2,
 h3,
@@ -161,7 +170,7 @@ label {
 .header-area .main-menu ul > li a {
   font-size: 16px;
   color: #484848;
-  padding: 48px 0 48px 25px;
+  padding: 38px 0 38px 25px;
   display: block; }
 
 .header-area .theme-btn {
@@ -248,9 +257,6 @@ label {
   color: #fff; }
 
 /** mobile-menu **/
-.mean-container .mean-nav {
-  background: #fff; }
-
 .mobile-menu.mean-container {
   width: 100%; }
 
@@ -272,7 +278,19 @@ label {
   text-indent: inherit; }
 
 .mean-container a.meanmenu-reveal span {
-  background: #000; }
+  background: #fff; }
+
+.mean-container a.meanmenu-reveal span:first-child {
+  position: relative; }
+
+.mean-container a.meanmenu-reveal span:first-child::before {
+  content: "\f0c9";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: -3px;
+  left: 0;
+  font-size: 25px; }
 
 .mean-container .mean-nav ul li a {
   display: block;
@@ -281,7 +299,7 @@ label {
   padding: 1em 5%;
   margin: 0;
   text-align: left;
-  color: #000;
+  color: #fff;
   border-top: 1px solid #807373;
   text-decoration: none;
   text-transform: uppercase; }
@@ -381,7 +399,7 @@ label {
       border: 0;
       border-left: 1px solid #EEEEEE;
       caret-color: #CCCCCC;
-      color: #CCCCCC;
+      color: #484848;
       font-size: 16px;
       font-weight: 300; }
     .advanced-search-area .advanced-search .search-box-wrapper .search-btn {
@@ -400,6 +418,8 @@ label {
   background-position: center center;
   height: 300px;
   background-repeat: no-repeat; }
+  .advanced-search-area.style-2 .advanced-search {
+    padding-top: 11px; }
 
 /** responsive css **/
 /* XL Device :1200px. */
@@ -510,19 +530,18 @@ label {
     opacity: 0;
     visibility: hidden;
     transition: .3s; }
+  .search-page-area .product-wrapper .product-thumb img {
+    border-radius: 5px; }
   .search-page-area .product-wrapper .special-icon {
     position: absolute;
     top: 15px;
     left: 10px;
-    background: #2A3842;
+    background: rgba(42, 56, 66, 0.8);
     width: 24px;
     height: 24px;
     line-height: 24px;
     border-radius: 3px;
-    text-align: center;
-    visibility: hidden;
-    opacity: 0;
-    transition: .3s; }
+    text-align: center; }
     .search-page-area .product-wrapper .special-icon i {
       font-size: 12px;
       color: #EB920D; }
@@ -537,10 +556,8 @@ label {
     transition: .3s; }
     .search-page-area .product-wrapper .product-content h3 {
       font-size: 11px;
-      line-height: 1; }
-      .search-page-area .product-wrapper .product-content h3 a {
-        text-decoration: none;
-        color: #fff; }
+      line-height: 1;
+      color: #fff; }
     .search-page-area .product-wrapper .product-content .price-info .price span {
       font-size: 12px;
       font-weight: 600;
@@ -591,9 +608,6 @@ label {
           background: #1273EB; }
       .search-page-area .product-wrapper .social-profiles ul li:last-child {
         margin-bottom: 0; }
-  .search-page-area .product-wrapper:hover .special-icon {
-    visibility: visible;
-    opacity: 1; }
   .search-page-area .product-wrapper:hover .product-content {
     visibility: visible;
     opacity: 1; }
@@ -919,9 +933,7 @@ label {
 */
 .popular-product-area .single-popular-product-item {
   position: relative;
-  overflow: hidden;
-  width: 300px;
-  height: 250px; }
+  overflow: hidden; }
   .popular-product-area .single-popular-product-item .overlay {
     position: absolute;
     top: 0;
@@ -964,6 +976,27 @@ label {
     transform: translateY(-50%);
     left: 0;
     right: 0; }
+
+.popular-product-area .theme-btn {
+  padding-left: 50px; }
+  .popular-product-area .theme-btn a {
+    background-color: #1273EB;
+    border-color: #1273EB;
+    padding: 0;
+    border-radius: 7px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    width: 168px;
+    height: 48px;
+    line-height: 48px;
+    box-sizing: border-box; }
+  .popular-product-area .theme-btn:focus {
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0); }
 
 /** responsive css **/
 /* XL Device :1200px. */
@@ -1366,7 +1399,7 @@ label {
     right: 0;
     bottom: 0;
     content: "";
-    background-color: rgba(0, 0, 0, 0.8); }
+    background-color: rgba(29, 38, 45, 0.9); }
   .cta-area.style-1 .cta-text {
     position: relative;
     z-index: 9999; }
@@ -1416,7 +1449,7 @@ label {
 
 .cta-area.style-2 .cta-text .theme-btn a {
   color: #fff;
-  width: 224px;
+  width: 168px;
   font-weight: 500;
   text-transform: capitalize;
   height: 48px;
@@ -1485,9 +1518,12 @@ label {
 /* SM Small Device :550px. */
 /** courses-area **/
 .courses-area .single-course-item {
-  background-color: #fff; }
+  background-color: #fff;
+  border-radius: 5px; }
   .courses-area .single-course-item .course-thumb {
     width: 100%; }
+    .courses-area .single-course-item .course-thumb img {
+      border-radius: 5px; }
   .courses-area .single-course-item .couse-content-wrapper {
     padding: 20px; }
     .courses-area .single-course-item .couse-content-wrapper .course-rating-area {
@@ -1514,35 +1550,8 @@ label {
       color: #1273EB;
       font-weight: 600; }
     .courses-area .single-course-item .couse-content-wrapper .price-info .price-link a {
-      padding: 10px 45px;
-      border-radius: 30px; }
-
-.free-courses-area .single-course-item {
-  background-color: #fff; }
-  .free-courses-area .single-course-item .course-thumb {
-    width: 100%; }
-  .free-courses-area .single-course-item .couse-content-wrapper {
-    padding: 20px; }
-    .free-courses-area .single-course-item .couse-content-wrapper .course-rating-area {
-      font-size: 16px;
-      padding-bottom: 12px; }
-      .free-courses-area .single-course-item .couse-content-wrapper .course-rating-area .enrolled-students-num span {
-        color: #999999; }
-      .free-courses-area .single-course-item .couse-content-wrapper .course-rating-area .rating i {
-        color: #FAAF3A; }
-      .free-courses-area .single-course-item .couse-content-wrapper .course-rating-area .rating span {
-        color: #999999; }
-    .free-courses-area .single-course-item .couse-content-wrapper .course-content h3 {
-      font-size: 24px;
-      text-transform: capitalize;
-      font-weight: 600;
-      margin-bottom: 16px;
-      line-height: 32px; }
-    .free-courses-area .single-course-item .couse-content-wrapper .course-content .meta-info {
-      color: #999999; }
-    .free-courses-area .single-course-item .couse-content-wrapper .course-content .author-meta p {
-      color: #999999; }
-    .free-courses-area .single-course-item .couse-content-wrapper .price-info .price-link a {
+      background-color: #1273EB;
+      border-color: #1273EB;
       padding: 10px 45px;
       border-radius: 30px; }
 
@@ -1553,7 +1562,8 @@ label {
 /* Extra small Device. */
 /* SM Small Device :550px. */
 .courses-details-area .course-details .course-thumb img {
-  width: 100%; }
+  width: 100%;
+  border-radius: 5px; }
 
 .courses-details-area .course-details .course-meta-info .course-subtitle p {
   font-size: 16px;
@@ -1589,8 +1599,10 @@ label {
   color: #fff;
   text-decoration: none;
   text-transform: capitalize;
-  font-size: 25px;
-  font-weight: 700; }
+  font-size: 24px;
+  font-weight: 600;
+  background-color: #00AAFF;
+  border-color: #00AAFF; }
 
 .courses-details-area .course-overview-area .buy-info a {
   padding: 10px 50px;
@@ -1598,8 +1610,10 @@ label {
   color: #fff;
   text-decoration: none;
   text-transform: capitalize;
-  font-size: 25px;
-  font-weight: 700; }
+  font-size: 24px;
+  font-weight: 600;
+  background-color: #1273EB;
+  border-color: #1273EB; }
 
 .courses-details-area .course-overview-area .course-content {
   border: 1px solid #CCCCCC;
@@ -2322,6 +2336,38 @@ label {
     line-height: 40px; } }
 
 /* SM Small Device :550px. */
+/** contact-form-area **/
+.contact-form .your_email,
+.contact-form .your_name {
+  padding: 20px 30px;
+  border-color: #CCCCCC;
+  color: #CCCCCC; }
+
+.contact-form .your_comment {
+  min-height: 250px; }
+
+.contact-form .form-submit {
+  width: 168px;
+  height: 48px;
+  margin: 0 auto;
+  display: block;
+  font-weight: 600;
+  padding: 0;
+  border: 0;
+  font-size: 16px;
+  border-radius: 5px; }
+
+.contact-form .form-control:focus {
+  color: #212529;
+  border-color: #7497B6;
+  box-shadow: inherit; }
+
+/** responsive css **/
+/* XL Device :1200px. */
+/* LG Device :992px. */
+/* MD Device :768px. */
+/* Extra small Device. */
+/* SM Small Device :550px. */
 /** Custom & Default Widget **/
 .footer-top-widget h2 {
   font-size: 18px;
@@ -2374,7 +2420,7 @@ label {
 
 .footer-top-widget .about-widget .theme-btn a {
   font-size: 16px;
-  border: 2px solid #fff;
+  border: 1.5px solid #fff;
   width: 146px;
   border-radius: 30px;
   color: #fff;
@@ -2501,8 +2547,65 @@ label {
   .footer-top-extra-widget .about-widget .logo {
     margin-bottom: 0; } }
 
+.free-courses-area .single-course-item {
+  position: relative; }
+  .free-courses-area .single-course-item a {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    text-align: center; }
+    .free-courses-area .single-course-item a i {
+      font-size: 18px;
+      border: 2px double #fff;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 50%; }
+
+/** responsive css **/
+/* XL Device :1200px. */
+/* LG Device :992px. */
+/* MD Device :768px. */
+/* Extra small Device. */
+/* SM Small Device :550px. */
 .footer-top-ads {
   text-align: center; }
+
+.custom-pagination {
+  margin-bottom: 30px;
+  display: block;
+  overflow: hidden; }
+  .custom-pagination ul {
+    text-align: center; }
+    .custom-pagination ul li {
+      display: inline;
+      margin-right: 5px; }
+      .custom-pagination ul li span.current {
+        color: #fff;
+        background-color: #000;
+        padding: 10px 20px;
+        border: 1px solid #000;
+        display: inline-block; }
+      .custom-pagination ul li span.dots {
+        padding: 10px 20px;
+        display: inline-block; }
+      .custom-pagination ul li a {
+        color: #000;
+        border: 1px solid transparent;
+        padding: 10px 20px;
+        text-decoration: none;
+        display: inline; }
+        .custom-pagination ul li a:hover {
+          border: 1px solid #000; }
+        .custom-pagination ul li a.prev {
+          border: 1px solid #000; }
+        .custom-pagination ul li a.next {
+          border: 1px solid #000; }
+        .custom-pagination ul li a.prev:hover, .custom-pagination ul li a.next:hover {
+          color: #fff;
+          background: #000;
+          border: 1px solid #000; }
 
 /** footer-area  **/
 .footer-area {

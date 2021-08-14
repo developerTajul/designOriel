@@ -217,6 +217,14 @@
 			$(this).addClass('active');
 		});
 
+      // magnificPopup
+      $('.popup-img').magnificPopup({
+          type: 'iframe',
+          gallery: {
+              enabled: true
+          }
+      });
+
 	});
 
 }(jQuery));

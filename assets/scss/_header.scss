@@ -28,7 +28,7 @@
             &> li a{
                 font-size: 16px;
                 color: #484848;
-                padding: 48px 0 48px 25px;
+                padding: 38px 0 38px 25px;
                 display: block;
             }
             
@@ -130,7 +130,7 @@
 
 /** mobile-menu **/
 .mean-container .mean-nav {
-	background: #fff;
+	// background: #fff;
 }
 .mobile-menu.mean-container {
     width: 100%;
@@ -155,8 +155,22 @@
 }
 
 .mean-container a.meanmenu-reveal span {
-    background: #000;
+    background: #fff;
 }
+.mean-container a.meanmenu-reveal span:first-child{
+    position: relative;
+}
+.mean-container a.meanmenu-reveal span:first-child::before {
+    content: "\f0c9";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    font-size: 25px;
+
+}
+
 .mean-container .mean-nav ul li a {
 	display: block;
 	float: left;
@@ -164,7 +178,7 @@
 	padding: 1em 5%;
 	margin: 0;
 	text-align: left;
-	color: #000;
+	color: #fff;
 	border-top: 1px solid #807373;
 	text-decoration: none;
 	text-transform: uppercase;

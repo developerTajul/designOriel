@@ -135,11 +135,17 @@
 .mb-20 {
 	margin-bottom: 20px;
 }
+.mb-24 {
+	margin-bottom: 24px;
+}
 .mb-25 {
 	margin-bottom: 25px;
 }
 .mb-30 {
 	margin-bottom: 30px;
+}
+.mb-32 {
+	margin-bottom: 32px;
 }
 .mb-35 {
 	margin-bottom: 35px;
@@ -320,6 +326,9 @@
 }
 .pt-95 {
 	padding-top: 95px;
+}
+.pt-96 {
+	padding-top: 96px;
 }
 .pt-100 {
 	padding-top: 100px;

@@ -11,10 +11,15 @@
         min-height: 250px;
     }
     .form-submit{
+        width: 168px;
+        height: 48px;
         margin: 0 auto;
         display: block;
-        padding: 10px 35px;
         font-weight: 600;
+        padding: 0;
+        border: 0;
+        font-size: 16px;
+        border-radius: 5px;
     }
 
     .form-control:focus {
