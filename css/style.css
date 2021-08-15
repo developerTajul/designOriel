@@ -284,9 +284,8 @@ label {
   position: relative; }
 
 .mean-container a.meanmenu-reveal span:first-child::before {
-  content: "\f0c9";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
+  content: "\f106";
+  font-family: flaticon !important;
   position: absolute;
   top: -3px;
   left: 0;
@@ -310,9 +309,13 @@ label {
 /* MD Device :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
   .mean-container a.meanmenu-reveal {
-    top: -10px; } }
+    top: 0px; } }
 
 /* Extra small Device. */
+@media (max-width: 767px) {
+  .mean-container a.meanmenu-reveal {
+    top: 0px !important; } }
+
 /* SM Small Device :550px. */
 .button-area .theme-btn a {
   width: 168px;
@@ -883,42 +886,104 @@ label {
   .portfolio-area .portfolio-menu button.active {
     color: #1273EB; }
 
-.portfolio-area .portfolio-wrapper {
+.portfolio-area .product-wrapper {
   position: relative; }
-  .portfolio-area .portfolio-wrapper .overlay {
+  .portfolio-area .product-wrapper .overlay {
     position: absolute;
-    top: 0;
+    top: 50%;
     left: 0;
     right: 0;
     bottom: 0;
     content: "";
-    background-color: rgba(0, 187, 254, 0.9);
+    background: linear-gradient(rgba(8, 25, 43, 0), rgba(8, 25, 43, 0.85)) top;
     opacity: 0;
     visibility: hidden;
     transition: .3s; }
-  .portfolio-area .portfolio-wrapper .portfolio-thumb img {
-    width: 100%; }
-  .portfolio-area .portfolio-wrapper .portfolio-content {
+  .portfolio-area .product-wrapper .product-thumb img {
+    border-radius: 5px; }
+  .portfolio-area .product-wrapper .special-icon {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 15px;
+    left: 10px;
+    background: rgba(42, 56, 66, 0.8);
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 3px;
+    text-align: center; }
+    .portfolio-area .product-wrapper .special-icon i {
+      font-size: 12px;
+      color: #EB920D; }
+  .portfolio-area .product-wrapper .product-content {
+    position: absolute;
+    bottom: 0;
     left: 0;
-    right: 0;
-    opacity: 0;
+    padding: 0 10px 10px;
+    width: 100%;
     visibility: hidden;
+    opacity: 0;
     transition: .3s; }
-    .portfolio-area .portfolio-wrapper .portfolio-content .icon i {
+    .portfolio-area .product-wrapper .product-content h3 {
+      font-size: 11px;
+      line-height: 1;
       color: #fff; }
-    .portfolio-area .portfolio-wrapper .portfolio-content h3 {
+    .portfolio-area .product-wrapper .product-content .price-info .price span {
+      font-size: 12px;
+      font-weight: 600;
       color: #fff; }
-      .portfolio-area .portfolio-wrapper .portfolio-content h3 a {
-        text-decoration: none; }
-    .portfolio-area .portfolio-wrapper .portfolio-content span {
-      color: #fff; }
-  .portfolio-area .portfolio-wrapper:hover .overlay {
-    opacity: 1;
-    visibility: visible; }
-  .portfolio-area .portfolio-wrapper:hover .portfolio-content {
+    .portfolio-area .product-wrapper .product-content .price-info .love-icon {
+      margin-left: 7px;
+      padding-left: 7px;
+      position: relative; }
+      .portfolio-area .product-wrapper .product-content .price-info .love-icon::before {
+        content: "";
+        background: #fff;
+        width: 2px;
+        height: 15px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%); }
+      .portfolio-area .product-wrapper .product-content .price-info .love-icon i {
+        font-size: 10px;
+        color: #fff;
+        line-height: 1; }
+      .portfolio-area .product-wrapper .product-content .price-info .love-icon span {
+        font-size: 12px;
+        font-weight: 400;
+        color: #fff;
+        margin-left: 3px;
+        line-height: 1; }
+  .portfolio-area .product-wrapper .social-profiles {
+    position: absolute;
+    top: 19px;
+    right: 7px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s; }
+    .portfolio-area .product-wrapper .social-profiles ul li {
+      margin-bottom: 5px; }
+      .portfolio-area .product-wrapper .social-profiles ul li a {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        border-radius: 3px;
+        color: #484848;
+        display: inline-block;
+        text-align: center;
+        background: #fff; }
+        .portfolio-area .product-wrapper .social-profiles ul li a:hover {
+          color: #fff;
+          background: #1273EB; }
+      .portfolio-area .product-wrapper .social-profiles ul li:last-child {
+        margin-bottom: 0; }
+  .portfolio-area .product-wrapper:hover .product-content {
+    visibility: visible;
+    opacity: 1; }
+  .portfolio-area .product-wrapper:hover .social-profiles {
+    visibility: visible;
+    opacity: 1; }
+  .portfolio-area .product-wrapper:hover .overlay {
     opacity: 1;
     visibility: visible; }
 
@@ -1594,7 +1659,7 @@ label {
       margin-left: 0; }
 
 .courses-details-area .course-overview-area .buy-info span {
-  padding: 10px 50px;
+  width: 200px;
   border-radius: 5px;
   color: #fff;
   text-decoration: none;
@@ -1602,10 +1667,13 @@ label {
   font-size: 24px;
   font-weight: 600;
   background-color: #00AAFF;
-  border-color: #00AAFF; }
+  border-color: #00AAFF;
+  height: 60px;
+  padding: 0;
+  line-height: 60px; }
 
 .courses-details-area .course-overview-area .buy-info a {
-  padding: 10px 50px;
+  padding: 0;
   border-radius: 5px;
   color: #fff;
   text-decoration: none;
@@ -1613,7 +1681,10 @@ label {
   font-size: 24px;
   font-weight: 600;
   background-color: #1273EB;
-  border-color: #1273EB; }
+  border-color: #1273EB;
+  height: 60px;
+  line-height: 60px;
+  width: 200px; }
 
 .courses-details-area .course-overview-area .course-content {
   border: 1px solid #CCCCCC;
@@ -2337,6 +2408,7 @@ label {
 
 /* SM Small Device :550px. */
 /** contact-form-area **/
+.contact-form .your_comment,
 .contact-form .your_email,
 .contact-form .your_name {
   padding: 20px 30px;

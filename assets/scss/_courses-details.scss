@@ -52,7 +52,7 @@
     .course-overview-area{
         .buy-info{
             span{
-                padding: 10px 50px;
+                width: 200px;
                 border-radius: 5px;
                 color: #fff;
                 text-decoration: none;
@@ -61,9 +61,12 @@
                 font-weight: 600;
                 background-color: #00AAFF;
                 border-color: #00AAFF;
+                height: 60px;
+                padding: 0;
+                line-height: 60px;
             }
             a{
-                padding: 10px 50px;
+                padding: 0;
                 border-radius: 5px;
                 color: #fff;
                 text-decoration: none;
@@ -72,6 +75,9 @@
                 font-weight: 600;
                 background-color: #1273EB;
                 border-color: #1273EB;
+                height: 60px;
+                line-height: 60px;
+                width: 200px;
             }
         }
         .course-content{
