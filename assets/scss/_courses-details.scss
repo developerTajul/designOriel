@@ -51,6 +51,7 @@
 
     .course-overview-area{
         .buy-info{
+            margin-bottom: 24px;
             span{
                 width: 200px;
                 border-radius: 5px;
@@ -89,8 +90,10 @@
                 text-transform: capitalize;
                 text-align: center;
                 background-color: #4AD395;
-                padding: 15px 0;
+                padding: 0;
                 color: #fff;
+                height: 60px;
+                line-height: 60px;
             }
             ul{
                 background-color: #F4F4F4;

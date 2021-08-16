@@ -142,7 +142,17 @@
                     &:last-child{
                         margin-bottom: 0;
                     }
+                    &:nth-child(1) a{
+                        color: red;
+                    }
+                    &:nth-child(2) a{
+                        color: green;
+                    }
+                    &:nth-child(3) a{
+                        color: violet;
+                    }
                 }
+
             }
         }
 

@@ -19,6 +19,7 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
     -moz-osx-font-smoothing: grayscale;
 }
 
+
 .flaticon-left-chevron:before {
     content: "\f101";
 }
@@ -42,4 +43,208 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 }
 .flaticon-printer:before {
     content: "\f108";
+}
+.flaticon-link:before {
+    content: "\f109";
+}
+.flaticon-broken-link:before {
+    content: "\f10a";
+}
+.flaticon-link-1:before {
+    content: "\f10b";
+}
+.flaticon-link-2:before {
+    content: "\f10c";
+}
+.flaticon-phone-call:before {
+    content: "\f10d";
+}
+.flaticon-telephone:before {
+    content: "\f10e";
+}
+.flaticon-phone-call-1:before {
+    content: "\f10f";
+}
+.flaticon-telephone-1:before {
+    content: "\f110";
+}
+.flaticon-call:before {
+    content: "\f111";
+}
+.flaticon-phone-call-2:before {
+    content: "\f112";
+}
+.flaticon-smartphone:before {
+    content: "\f113";
+}
+.flaticon-smartphone-1:before {
+    content: "\f114";
+}
+.flaticon-phone-call-3:before {
+    content: "\f115";
+}
+.flaticon-hand-shake:before {
+    content: "\f116";
+}
+.flaticon-handshake:before {
+    content: "\f117";
+}
+.flaticon-handshake-1:before {
+    content: "\f118";
+}
+.flaticon-handshake-2:before {
+    content: "\f119";
+}
+.flaticon-handshake-3:before {
+    content: "\f11a";
+}
+.flaticon-handshake-4:before {
+    content: "\f11b";
+}
+.flaticon-hand-shake-1:before {
+    content: "\f11c";
+}
+.flaticon-handshake-8:before {
+    content: "\f11d";
+}
+.flaticon-handshake-9:before {
+    content: "\f11e";
+}
+.flaticon-deal:before {
+    content: "\f11f";
+}
+.flaticon-deal-1:before {
+    content: "\f120";
+}
+.flaticon-agreement-1:before {
+    content: "\f121";
+}
+.flaticon-handshake-10:before {
+    content: "\f122";
+}
+.flaticon-greetings:before {
+    content: "\f123";
+}
+.flaticon-deal-2:before {
+    content: "\f124";
+}
+.flaticon-handshake-11:before {
+    content: "\f125";
+}
+.flaticon-deal-3:before {
+    content: "\f126";
+}
+.flaticon-handshake-12:before {
+    content: "\f127";
+}
+.flaticon-desktop:before {
+    content: "\f128";
+}
+.flaticon-computer:before {
+    content: "\f129";
+}
+.flaticon-desktop-1:before {
+    content: "\f12a";
+}
+.flaticon-computer-1:before {
+    content: "\f12b";
+}
+.flaticon-pinterest:before {
+    content: "\f12c";
+}
+.flaticon-facebook:before {
+    content: "\f12d";
+}
+.flaticon-pinterest-2:before {
+    content: "\f12e";
+}
+.flaticon-facebook-logo:before {
+    content: "\f12f";
+}
+.flaticon-pinterest-3:before {
+    content: "\f130";
+}
+.flaticon-pinterest-4:before {
+    content: "\f131";
+}
+.flaticon-printer-1:before {
+    content: "\f132";
+}
+.flaticon-menu:before {
+    content: "\f133";
+}
+.flaticon-menu-1:before {
+    content: "\f134";
+}
+.flaticon-menu-2:before {
+    content: "\f135";
+}
+.flaticon-menu-3:before {
+    content: "\f136";
+}
+.flaticon-menu-4:before {
+    content: "\f137";
+}
+.flaticon-menu-5:before {
+    content: "\f138";
+}
+.flaticon-briefcase:before {
+    content: "\f139";
+}
+.flaticon-paper-plane:before {
+    content: "\f13a";
+}
+.flaticon-desktop-2:before {
+    content: "\f13b";
+}
+.flaticon-light-bulb:before {
+    content: "\f13c";
+}
+.flaticon-placeholder:before {
+    content: "\f13d";
+}
+.flaticon-phone-call-4:before {
+    content: "\f13e";
+}
+.flaticon-mail:before {
+    content: "\f13f";
+}
+.flaticon-link-3:before {
+    content: "\f140";
+}
+.flaticon-heart:before {
+    content: "\f141";
+}
+.flaticon-charity:before {
+    content: "\f142";
+}
+.flaticon-healthy:before {
+    content: "\f143";
+}
+.flaticon-social-responsibility:before {
+    content: "\f144";
+}
+.flaticon-twitter:before {
+    content: "\f145";
+}
+.flaticon-twitter-2:before {
+    content: "\f146";
+}
+.flaticon-twitter-3:before {
+    content: "\f147";
+}
+.flaticon-twitter-4:before {
+    content: "\f148";
+}
+.flaticon-vimeo:before {
+    content: "\f149";
+}
+.flaticon-vimeo-1:before {
+    content: "\f14a";
+}
+.flaticon-linkedin:before {
+    content: "\f14b";
+}
+.flaticon-linkedin-logo:before {
+    content: "\f14c";
 }

@@ -40,13 +40,17 @@
     .theme-btn{
         padding-left: 25px;
         a{
-            background-color: #00BBFE;
-            border-color: #00BBFE;
+            background-color: #00AAFF;
+            border-color: #00AAFF;
             padding: 12px 45px;
             border-radius: 30px;
             color: #fff;
             text-decoration: none;
             text-transform: capitalize;
+            &:hover{
+                background-color: #0099FF;
+                border-color: #0099FF;
+            }
         }
     }
 }
@@ -164,14 +168,12 @@
     // content: "\f0c9";
     // font-family: "Font Awesome 5 Free";
     // font-weight: 900;
-    content: "\f106";
-   
+    content: "\f133";
     font-family: flaticon !important;
-    
     position: absolute;
     top: -3px;
     left: 0;
-    font-size: 25px;
+    font-size: 20px;
 
 }
 

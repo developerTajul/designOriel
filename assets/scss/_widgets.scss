@@ -37,6 +37,7 @@
                     display: inline-block;
                     border-radius: 50%;
                     color: #010101;
+                    text-decoration: none;
 
                     &:hover{
                         color: #fff;
@@ -91,7 +92,7 @@
                 line-height: 26px;
                 color: #fff;
                 font-weight: 300;
-                margin-bottom: 15px;
+                margin-bottom: 7px;
             }
         }
 
@@ -173,7 +174,7 @@
                         display: inline-block;
                         border-radius: 50%;
                         color: #010101;
-
+                        text-decoration: none;
                         &:hover{
                             color: #fff;
                             background: #1273EB;

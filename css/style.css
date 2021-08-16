@@ -176,13 +176,16 @@ label {
 .header-area .theme-btn {
   padding-left: 25px; }
   .header-area .theme-btn a {
-    background-color: #00BBFE;
-    border-color: #00BBFE;
+    background-color: #00AAFF;
+    border-color: #00AAFF;
     padding: 12px 45px;
     border-radius: 30px;
     color: #fff;
     text-decoration: none;
     text-transform: capitalize; }
+    .header-area .theme-btn a:hover {
+      background-color: #0099FF;
+      border-color: #0099FF; }
 
 /** dropdown 1**/
 .main-menu ul ul.submenu {
@@ -284,12 +287,12 @@ label {
   position: relative; }
 
 .mean-container a.meanmenu-reveal span:first-child::before {
-  content: "\f106";
+  content: "\f133";
   font-family: flaticon !important;
   position: absolute;
   top: -3px;
   left: 0;
-  font-size: 25px; }
+  font-size: 20px; }
 
 .mean-container .mean-nav ul li a {
   display: block;
@@ -360,16 +363,15 @@ label {
       .advanced-search-area .advanced-search .search-box-wrapper .select-box-wrap .select-cat {
         background-color: transparent;
         font-weight: 400;
-        padding: 0;
+        padding: 0 20px 0 0;
         border: 1px solid transparent;
         height: 78px;
         line-height: 78px;
         border-radius: 0;
         float: none;
-        display: inline-block;
-        margin-right: 10px; }
+        display: inline-block; }
         .advanced-search-area .advanced-search .search-box-wrapper .select-box-wrap .select-cat::after {
-          right: -15px;
+          right: 7px;
           border-bottom: 1px solid #484848;
           border-right: 1px solid #484848;
           width: 9px;
@@ -404,7 +406,7 @@ label {
       caret-color: #CCCCCC;
       color: #484848;
       font-size: 16px;
-      font-weight: 300; }
+      font-weight: 400; }
     .advanced-search-area .advanced-search .search-box-wrapper .search-btn {
       width: 110px;
       float: left;
@@ -415,6 +417,9 @@ label {
       box-sizing: border-box;
       height: 78px;
       border-radius: 0 10px 10px 0; }
+      .advanced-search-area .advanced-search .search-box-wrapper .search-btn:hover {
+        background-color: #0099FF;
+        border-color: #0099FF; }
 
 /** search style - 2 **/
 .advanced-search-area.style-2 {
@@ -611,6 +616,12 @@ label {
           background: #1273EB; }
       .search-page-area .product-wrapper .social-profiles ul li:last-child {
         margin-bottom: 0; }
+      .search-page-area .product-wrapper .social-profiles ul li:nth-child(1) a {
+        color: red; }
+      .search-page-area .product-wrapper .social-profiles ul li:nth-child(2) a {
+        color: green; }
+      .search-page-area .product-wrapper .social-profiles ul li:nth-child(3) a {
+        color: violet; }
   .search-page-area .product-wrapper:hover .product-content {
     visibility: visible;
     opacity: 1; }
@@ -996,59 +1007,13 @@ label {
 /**
 * Popular Products
 */
-.popular-product-area .single-popular-product-item {
-  position: relative;
-  overflow: hidden; }
-  .popular-product-area .single-popular-product-item .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: "";
-    background-color: rgba(0, 187, 254, 0.9);
-    opacity: 0;
-    visibility: hidden;
-    transition: .3s; }
-  .popular-product-area .single-popular-product-item .popular-product-thumb img {
-    width: 100%; }
-  .popular-product-area .single-popular-product-item .popular-product-content .icons {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0; }
-    .popular-product-area .single-popular-product-item .popular-product-content .icons a {
-      margin: 0 5px;
-      width: 50px;
-      height: 50px;
-      line-height: 50px;
-      text-align: center;
-      display: inline-block;
-      background-color: #00AAFF;
-      border-radius: 50%;
-      color: #fff; }
-      .popular-product-area .single-popular-product-item .popular-product-content .icons a i {
-        font-size: 20px; }
-      .popular-product-area .single-popular-product-item .popular-product-content .icons a:hover {
-        background-color: #fff;
-        color: #00AAFF; }
-  .popular-product-area .single-popular-product-item:hover .overlay {
-    opacity: 1;
-    visibility: visible; }
-  .popular-product-area .single-popular-product-item:hover .popular-product-content .icons {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-    right: 0; }
-
-.popular-product-area .theme-btn {
+.search-page-area .theme-btn {
   padding-left: 50px; }
-  .popular-product-area .theme-btn a {
+  .search-page-area .theme-btn a {
     background-color: #1273EB;
     border-color: #1273EB;
     padding: 0;
-    border-radius: 7px;
+    border-radius: 5px;
     color: #fff;
     text-decoration: none;
     text-transform: capitalize;
@@ -1056,12 +1021,7 @@ label {
     font-weight: 500;
     width: 168px;
     height: 48px;
-    line-height: 48px;
-    box-sizing: border-box; }
-  .popular-product-area .theme-btn:focus {
-    background-color: transparent;
-    border-color: transparent;
-    box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0); }
+    line-height: 48px; }
 
 /** responsive css **/
 /* XL Device :1200px. */
@@ -1658,33 +1618,34 @@ label {
     .courses-details-area .course-details .social-profiles ul li:first-child {
       margin-left: 0; }
 
-.courses-details-area .course-overview-area .buy-info span {
-  width: 200px;
-  border-radius: 5px;
-  color: #fff;
-  text-decoration: none;
-  text-transform: capitalize;
-  font-size: 24px;
-  font-weight: 600;
-  background-color: #00AAFF;
-  border-color: #00AAFF;
-  height: 60px;
-  padding: 0;
-  line-height: 60px; }
-
-.courses-details-area .course-overview-area .buy-info a {
-  padding: 0;
-  border-radius: 5px;
-  color: #fff;
-  text-decoration: none;
-  text-transform: capitalize;
-  font-size: 24px;
-  font-weight: 600;
-  background-color: #1273EB;
-  border-color: #1273EB;
-  height: 60px;
-  line-height: 60px;
-  width: 200px; }
+.courses-details-area .course-overview-area .buy-info {
+  margin-bottom: 24px; }
+  .courses-details-area .course-overview-area .buy-info span {
+    width: 200px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: #00AAFF;
+    border-color: #00AAFF;
+    height: 60px;
+    padding: 0;
+    line-height: 60px; }
+  .courses-details-area .course-overview-area .buy-info a {
+    padding: 0;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: #1273EB;
+    border-color: #1273EB;
+    height: 60px;
+    line-height: 60px;
+    width: 200px; }
 
 .courses-details-area .course-overview-area .course-content {
   border: 1px solid #CCCCCC;
@@ -1695,8 +1656,10 @@ label {
     text-transform: capitalize;
     text-align: center;
     background-color: #4AD395;
-    padding: 15px 0;
-    color: #fff; }
+    padding: 0;
+    color: #fff;
+    height: 60px;
+    line-height: 60px; }
   .courses-details-area .course-overview-area .course-content ul {
     background-color: #F4F4F4; }
     .courses-details-area .course-overview-area .course-content ul li {
@@ -2360,27 +2323,24 @@ label {
   position: absolute;
   transform: translateY(-50%);
   z-index: 78;
-  background: #00AAFF;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
+  background: inherit;
   text-align: center;
-  color: #fff;
+  color: #999999;
   cursor: pointer;
   transition: .3s;
   border-radius: 50%; }
 
 .service-item-active i.slick-arrow:hover {
-  background: #1373EB; }
+  color: #1373EB; }
 
 .service-item-active i.fa-chevron-left {
   top: 50%;
-  left: 10px;
+  left: 55px;
   font-size: 20px; }
 
 .service-item-active i.fa-chevron-right {
   top: 50%;
-  right: 10px;
+  right: 55px;
   font-size: 20px; }
 
 /** responsive css **/
@@ -2473,7 +2433,8 @@ label {
     text-align: center;
     display: inline-block;
     border-radius: 50%;
-    color: #010101; }
+    color: #010101;
+    text-decoration: none; }
     .footer-top-widget .social-profiles ul li a:hover {
       color: #fff;
       background: #F26957; }
@@ -2511,7 +2472,7 @@ label {
   line-height: 26px;
   color: #fff;
   font-weight: 300;
-  margin-bottom: 15px; }
+  margin-bottom: 7px; }
 
 .footer-top-widget .subscribe-widget .subscribe-form p {
   margin-bottom: 18px; }
@@ -2563,7 +2524,8 @@ label {
         text-align: center;
         display: inline-block;
         border-radius: 50%;
-        color: #010101; }
+        color: #010101;
+        text-decoration: none; }
         .footer-top-extra-widget .about-widget .social-profiles ul li a:hover {
           color: #fff;
           background: #1273EB; }
