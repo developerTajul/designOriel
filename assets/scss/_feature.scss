@@ -57,10 +57,14 @@
 }
 
 
+
 /** responsive css **/ 
 /* XL Device :1200px. */
 @media (min-width: 1200px) and (max-width: 1400px) {
-
+	.single-service-item.text-center.mb-30 {
+		height: 430px;
+		padding: 52px 25px 40px;
+	}
 
 }
 

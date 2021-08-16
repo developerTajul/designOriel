@@ -644,6 +644,9 @@ label {
     text-transform: capitalize;
     font-size: 16px;
     font-weight: 500; }
+    .search-page-area .theme-btn a:hover {
+      background-color: #0161cd;
+      border-color: #0161cd; }
 
 /** responsive css **/
 /* XL Device :1200px. */
@@ -1372,6 +1375,11 @@ label {
 
 /** responsive css **/
 /* XL Device :1200px. */
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .single-service-item.text-center.mb-30 {
+    height: 430px;
+    padding: 52px 25px 40px; } }
+
 /* LG Device :992px. */
 @media (min-width: 992px) and (max-width: 1200px) {
   .work-progress-area .work-line img {
@@ -1442,8 +1450,8 @@ label {
       text-transform: capitalize;
       font-weight: 500; }
       .cta-area.style-1 .cta-text .theme-btn a:hover {
-        border: 1px solid #1273EB;
-        background-color: #1273EB; }
+        border: 1px solid #0161cd;
+        background-color: #0161cd; }
 
 .cta-area.style-2 .cta-text h2 {
   font-size: 48px;
@@ -1480,7 +1488,12 @@ label {
   height: 48px;
   padding: 0;
   line-height: 48px;
-  font-size: 16px; }
+  font-size: 16px;
+  background-color: #1273EB;
+  border-color: #1273EB; }
+  .cta-area.style-2 .cta-text .theme-btn a:hover {
+    border: 1px solid #0161cd;
+    background-color: #0161cd; }
 
 .cta-area.style-3 .cta-text h2 {
   font-size: 48px;
@@ -1516,6 +1529,9 @@ label {
   display: block;
   background-color: #1273EB;
   border-color: #1273EB; }
+  .cta-area.style-3 .cta-text .theme-btn a:hover {
+    border: 1px solid #0161cd;
+    background-color: #0161cd; }
 
 /** responsive css **/
 /* XL Device :1200px. */

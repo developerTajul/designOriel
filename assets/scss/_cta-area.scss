@@ -36,8 +36,8 @@
                 text-transform: capitalize;
                 font-weight: 500;
                 &:hover{
-                    border: 1px solid #1273EB;
-                    background-color: #1273EB;
+                    border: 1px solid #0161cd;
+                    background-color: #0161cd;
                 }
             }
         }
@@ -87,6 +87,12 @@
                 padding: 0;
                 line-height: 48px;
                 font-size: 16px;
+                background-color: #1273EB;
+                border-color: #1273EB;
+                &:hover{
+                    border: 1px solid #0161cd;
+                    background-color: #0161cd;
+                }
             }
         }
     }
@@ -132,6 +138,10 @@
                 display: block;
                 background-color: #1273EB;
                 border-color: #1273EB;
+                &:hover{
+                    border: 1px solid #0161cd;
+                    background-color: #0161cd;
+                }
             }
         }
     }

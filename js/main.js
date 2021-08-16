@@ -210,12 +210,24 @@
     	// nice select
     	$('select').niceSelect();
 
-		/** active class on last item */
+		/** active class on last item 
 		$(document).on('mouseover','.single-service-item',function() {
 			$(this).addClass('active');
 			$('.single-service-item').removeClass('active');
 			$(this).addClass('active');
 		});
+    */
+    $(document).on('mouseover','.single-service-item',function() {
+			$(this).addClass('active');
+			$('.single-service-item').removeClass('active');
+		});
+    $(document).on('mouseout','.single-service-item',function() {
+      $('.services-area .service-item:nth-child(2n) .single-service-item').addClass('active');
+		});
+   
+
+
+ 
 
       // magnificPopup
       $('.popup-img').magnificPopup({
