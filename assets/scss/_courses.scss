@@ -6,7 +6,7 @@
         .course-thumb{
             width: 100%;
             img{
-                border-radius: 5px;
+                border-radius: 5px 5px 0 0;
             }
             
         }
@@ -42,6 +42,7 @@
                 }
                 .meta-info{
                     color: #999999;
+                    margin-bottom: 5px;
                     .lecture-num{}
                     .students-num{}
                 }
@@ -67,10 +68,14 @@
                 }
                 .price-link{
                     a{
-                        background-color: #1273EB;
-                        border-color: #1273EB;
                         padding: 10px 45px;
                         border-radius: 30px;
+                        background-color: #1273EB;
+                        border-color: #1273EB;
+                        &:hover{
+                            border: 1px solid #0161cd;
+                            background-color: #0161cd;
+                        }
                     }
                 }
             }

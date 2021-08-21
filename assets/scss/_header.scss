@@ -14,6 +14,9 @@
             li{
                 float: left;
                 position: relative;
+                &.current-menu-item a{
+                    color: #1273EB;
+                }
                 a{
                     
                     text-transform: capitalize;
@@ -168,13 +171,23 @@
     // content: "\f0c9";
     // font-family: "Font Awesome 5 Free";
     // font-weight: 900;
-    content: "\f133";
+    content: "\f126";
     font-family: flaticon !important;
     position: absolute;
     top: -3px;
     left: 0;
     font-size: 20px;
 
+}
+.mean-container a.meanmenu-reveal.meanclose::before {
+    content: "\f11c";
+    font-family: flaticon !important;
+    position: absolute;
+    top: 11px;
+    left: 0;
+    font-size: 20px;
+    right: 0;
+    background: #fff;
 }
 
 .mean-container .mean-nav ul li a {

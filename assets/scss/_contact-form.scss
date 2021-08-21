@@ -21,6 +21,12 @@
         border: 0;
         font-size: 16px;
         border-radius: 5px;
+        background-color: #1273EB;
+        border-color: #1273EB;
+        &:hover{
+            border: 1px solid #0161cd;
+            background-color: #0161cd;
+        }
     }
 
     .form-control:focus {

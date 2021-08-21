@@ -45,11 +45,12 @@
     h2{
         font-size: 48px;
         text-transform: capitalize;
-        padding-bottom: 15px;
+        padding-bottom: 4px;
         color: #fff;
     }
     p{
         color: #fff;
+        line-height: 36px;      
         span{
             display:block;
         }
@@ -60,6 +61,7 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    height: 300px;
 }
 
 

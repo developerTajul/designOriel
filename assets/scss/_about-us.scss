@@ -1,0 +1,105 @@
+.about-us-area{
+    .about-info{
+        h2{
+            font-size: 48px;
+            color: #303030;
+            font-weight: 400;
+            line-height: 60px;
+            margin-bottom: 30px;
+            span{
+                display: block;
+                font-weight: 600;
+            }
+        }
+        .desc{
+            padding-right: 30px;
+            margin-bottom: 40px;
+            p{
+                font-size: 16px;
+                color: #303030;
+                line-height: 30px;
+            }
+        }
+        .theme-btn{
+            a{
+                color: #fff;
+                width: 168px;
+                font-weight: 500;
+                text-transform: capitalize;
+                height: 48px;
+                padding: 0;
+                line-height: 48px;
+                font-size: 16px;
+                background-color: #1273EB;
+                border-color: #1273EB;
+                margin-right: 20px;
+                &.outline{
+                    background-color: transparent;
+                    border: 1.5px solid #0161cd;
+                    color: #0161cd;
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+                &:hover{
+                    border: 1.5px solid #0161cd;
+                    background-color: #0161cd;
+                }
+            }
+        }
+    }
+}
+
+
+/** responsive css **/ 
+/* XL Device :1200px. */
+@media (min-width: 1200px) and (max-width: 1400px) {
+
+
+}
+
+/* LG Device :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+}
+
+
+/* MD Device :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+	.about-info {
+        margin-bottom: 50px;
+    }
+
+}
+
+
+/* Extra small Device. */
+@media (max-width: 767px) {
+    .about-us-area .about-info h2 {
+        font-size: 25px;
+        color: #303030;
+        font-weight: 400;
+        line-height: 35px;
+        margin-bottom: 15px;
+    }
+
+    .about-info {
+        margin-bottom: 30px;
+    }
+
+    .about-us-area .about-info .theme-btn a {
+        width: 153px;
+    }
+    
+}
+
+/* SM Small Device :550px. */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+
+
+}
+
+
+
+

@@ -160,6 +160,8 @@ label {
 .header-area .main-menu ul li {
   float: left;
   position: relative; }
+  .header-area .main-menu ul li.current-menu-item a {
+    color: #1273EB; }
   .header-area .main-menu ul li a {
     text-transform: capitalize;
     font-weight: 400;
@@ -287,12 +289,22 @@ label {
   position: relative; }
 
 .mean-container a.meanmenu-reveal span:first-child::before {
-  content: "\f133";
+  content: "\f126";
   font-family: flaticon !important;
   position: absolute;
   top: -3px;
   left: 0;
   font-size: 20px; }
+
+.mean-container a.meanmenu-reveal.meanclose::before {
+  content: "\f11c";
+  font-family: flaticon !important;
+  position: absolute;
+  top: 11px;
+  left: 0;
+  font-size: 20px;
+  right: 0;
+  background: #fff; }
 
 .mean-container .mean-nav ul li a {
   display: block;
@@ -332,7 +344,8 @@ label {
 .advanced-search-area {
   background-position: center center;
   height: 570px;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: cover; }
   .advanced-search-area .advanced-search .search-header h2 {
     color: #fff;
     font-size: 48px;
@@ -425,7 +438,8 @@ label {
 .advanced-search-area.style-2 {
   background-position: center center;
   height: 300px;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: cover; }
   .advanced-search-area.style-2 .advanced-search {
     padding-top: 11px; }
 
@@ -517,12 +531,13 @@ label {
   background-color: transparent;
   border: 1px solid #303030;
   color: #303030;
-  padding: 10px 35px;
   margin-left: 10px;
-  font-size: 16px; }
+  font-size: 16px;
+  width: 140px;
+  height: 40px; }
   .search-page-area .search-menu button.active {
     background-color: #303030;
-    border-color: #303030;
+    border: 1px solid #303030;
     color: #fff; }
 
 .search-page-area .product-wrapper {
@@ -537,7 +552,8 @@ label {
     background: linear-gradient(rgba(8, 25, 43, 0), rgba(8, 25, 43, 0.85)) top;
     opacity: 0;
     visibility: hidden;
-    transition: .3s; }
+    transition: .3s;
+    border-radius: 5px; }
   .search-page-area .product-wrapper .product-thumb img {
     border-radius: 5px; }
   .search-page-area .product-wrapper .special-icon {
@@ -566,6 +582,45 @@ label {
       font-size: 11px;
       line-height: 1;
       color: #fff; }
+    .search-page-area .product-wrapper .product-content ul li {
+      position: relative;
+      color: #fff;
+      margin-left: 20px;
+      font-size: 12px;
+      font-weight: 600; }
+      .search-page-area .product-wrapper .product-content ul li:first-child {
+        margin-left: 10px; }
+      .search-page-area .product-wrapper .product-content ul li:first-child:after {
+        content: "";
+        background: #fff;
+        width: 2px;
+        height: 15px;
+        position: absolute;
+        top: 50%;
+        right: -10px;
+        transform: translateY(-50%); }
+      .search-page-area .product-wrapper .product-content ul li i {
+        font-size: 13px;
+        color: #fff; }
+      .search-page-area .product-wrapper .product-content ul li:first-child:before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f155";
+        position: absolute;
+        top: 1px;
+        left: -7px;
+        font-size: 10px; }
+      .search-page-area .product-wrapper .product-content ul li:last-child {
+        padding-left: 10px;
+        margin-left: 20px; }
+      .search-page-area .product-wrapper .product-content ul li:last-child:before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f004";
+        position: absolute;
+        top: 1px;
+        left: -2px;
+        font-size: 10px; }
     .search-page-area .product-wrapper .product-content .price-info .price span {
       font-size: 12px;
       font-weight: 600;
@@ -699,18 +754,20 @@ label {
 .section-heading.style-3 h2 {
   font-size: 48px;
   text-transform: capitalize;
-  padding-bottom: 15px;
+  padding-bottom: 4px;
   color: #fff; }
 
 .section-heading.style-3 p {
-  color: #fff; }
+  color: #fff;
+  line-height: 36px; }
   .section-heading.style-3 p span {
     display: block; }
 
 .section-heading-area.style-3 {
   background-size: cover;
   background-position: center center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  height: 300px; }
 
 /** responsive css **/
 /* XL Device :1200px. */
@@ -887,18 +944,23 @@ label {
     padding: 52px 20px 40px; } }
 
 /* SM Small Device :550px. */
-.portfolio-area .section-title h2 {
-  font-size: 48px;
-  font-weight: 600; }
+.portfolio-area .section-title {
+  margin-top: 35px; }
+  .portfolio-area .section-title h2 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 7px; }
 
-.portfolio-area .portfolio-menu button {
-  background: none;
-  border: inherit;
-  font-size: 16px;
-  color: #484848;
-  margin: 0 3px; }
-  .portfolio-area .portfolio-menu button.active {
-    color: #1273EB; }
+.portfolio-area .portfolio-menu {
+  margin-bottom: 36px; }
+  .portfolio-area .portfolio-menu button {
+    background: none;
+    border: inherit;
+    font-size: 16px;
+    color: #484848;
+    margin: 0 3px; }
+    .portfolio-area .portfolio-menu button.active {
+      color: #1273EB; }
 
 .portfolio-area .product-wrapper {
   position: relative; }
@@ -912,7 +974,8 @@ label {
     background: linear-gradient(rgba(8, 25, 43, 0), rgba(8, 25, 43, 0.85)) top;
     opacity: 0;
     visibility: hidden;
-    transition: .3s; }
+    transition: .3s;
+    border-radius: 5px; }
   .portfolio-area .product-wrapper .product-thumb img {
     border-radius: 5px; }
   .portfolio-area .product-wrapper .special-icon {
@@ -941,6 +1004,45 @@ label {
       font-size: 11px;
       line-height: 1;
       color: #fff; }
+    .portfolio-area .product-wrapper .product-content ul li {
+      position: relative;
+      color: #fff;
+      margin-left: 20px;
+      font-size: 12px;
+      font-weight: 600; }
+      .portfolio-area .product-wrapper .product-content ul li:first-child {
+        margin-left: 10px; }
+      .portfolio-area .product-wrapper .product-content ul li:first-child:after {
+        content: "";
+        background: #fff;
+        width: 2px;
+        height: 15px;
+        position: absolute;
+        top: 50%;
+        right: -10px;
+        transform: translateY(-50%); }
+      .portfolio-area .product-wrapper .product-content ul li i {
+        font-size: 13px;
+        color: #fff; }
+      .portfolio-area .product-wrapper .product-content ul li:first-child:before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f155";
+        position: absolute;
+        top: 1px;
+        left: -7px;
+        font-size: 10px; }
+      .portfolio-area .product-wrapper .product-content ul li:last-child {
+        padding-left: 10px;
+        margin-left: 20px; }
+      .portfolio-area .product-wrapper .product-content ul li:last-child:before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f004";
+        position: absolute;
+        top: 1px;
+        left: -2px;
+        font-size: 10px; }
     .portfolio-area .product-wrapper .product-content .price-info .price span {
       font-size: 12px;
       font-weight: 600;
@@ -1564,7 +1666,7 @@ label {
   .courses-area .single-course-item .course-thumb {
     width: 100%; }
     .courses-area .single-course-item .course-thumb img {
-      border-radius: 5px; }
+      border-radius: 5px 5px 0 0; }
   .courses-area .single-course-item .couse-content-wrapper {
     padding: 20px; }
     .courses-area .single-course-item .couse-content-wrapper .course-rating-area {
@@ -1583,7 +1685,8 @@ label {
       margin-bottom: 16px;
       line-height: 32px; }
     .courses-area .single-course-item .couse-content-wrapper .course-content .meta-info {
-      color: #999999; }
+      color: #999999;
+      margin-bottom: 5px; }
     .courses-area .single-course-item .couse-content-wrapper .course-content .author-meta p {
       color: #999999; }
     .courses-area .single-course-item .couse-content-wrapper .price-info .price span {
@@ -1591,10 +1694,13 @@ label {
       color: #1273EB;
       font-weight: 600; }
     .courses-area .single-course-item .couse-content-wrapper .price-info .price-link a {
-      background-color: #1273EB;
-      border-color: #1273EB;
       padding: 10px 45px;
-      border-radius: 30px; }
+      border-radius: 30px;
+      background-color: #1273EB;
+      border-color: #1273EB; }
+      .courses-area .single-course-item .couse-content-wrapper .price-info .price-link a:hover {
+        border: 1px solid #0161cd;
+        background-color: #0161cd; }
 
 /** responsive css **/
 /* XL Device :1200px. */
@@ -1677,7 +1783,8 @@ label {
     height: 60px;
     line-height: 60px; }
   .courses-details-area .course-overview-area .course-content ul {
-    background-color: #F4F4F4; }
+    background-color: #F4F4F4;
+    border-radius: 0 0 5px 5px; }
     .courses-details-area .course-overview-area .course-content ul li {
       border-bottom: 1px solid #CCCCCC;
       padding: 16px 25px; }
@@ -2250,17 +2357,38 @@ label {
   .flayer-details-area .services-nav .single-service-item {
     padding: 0 5px; }
 
+.flayer-details-area .flyer-details h3 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #1273EB;
+  margin-bottom: 25px;
+  line-height: 1;
+  margin-top: -3px; }
+  .flayer-details-area .flyer-details h3 a {
+    text-decoration: none;
+    position: relative; }
+    .flayer-details-area .flyer-details h3 a::before {
+      content: "\f121";
+      font-family: 'flaticon';
+      position: absolute;
+      top: 50%;
+      left: 105%;
+      font-size: 40px;
+      transform: translateY(-50%); }
+
 .flayer-details-area .flyer-details .flyer-meta-info .flyer-status span {
   background-color: #1373EB;
-  padding: 8px 85px;
+  padding: 0;
   border-radius: 5px;
   color: #fff;
   display: inline-block;
-  font-weight: 600;
-  text-transform: uppercase; }
-
-.flayer-details-area .flyer-details .flyer-meta-info .flyer-status span.premium {
-  padding: 8px 65px; }
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 215px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px; }
 
 .flayer-details-area .flyer-details .flyer-meta-info .social-profiles ul {
   margin-bottom: 0; }
@@ -2287,15 +2415,16 @@ label {
 .flayer-details-area .flyer-details .flyer-download .theme-btn a {
   background-color: #4AD395;
   border-color: #4AD395;
-  padding: 15px 30px;
-  border-radius: 7px;
+  border-radius: 5px;
   color: #fff;
   text-decoration: none;
   text-transform: capitalize;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 500;
   display: block;
-  text-align: center; }
+  text-align: center;
+  height: 70px;
+  line-height: 70px; }
 
 .flayer-details-area .flyer-details .flyer-desc {
   background-repeat: no-repeat;
@@ -2403,7 +2532,12 @@ label {
   padding: 0;
   border: 0;
   font-size: 16px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  background-color: #1273EB;
+  border-color: #1273EB; }
+  .contact-form .form-submit:hover {
+    border: 1px solid #0161cd;
+    background-color: #0161cd; }
 
 .contact-form .form-control:focus {
   color: #212529;
@@ -2541,7 +2675,8 @@ label {
         display: inline-block;
         border-radius: 50%;
         color: #010101;
-        text-decoration: none; }
+        text-decoration: none;
+        font-size: 18px; }
         .footer-top-extra-widget .about-widget .social-profiles ul li a:hover {
           color: #fff;
           background: #1273EB; }
@@ -2612,6 +2747,8 @@ label {
       background-color: #fff;
       padding: 20px;
       border-radius: 50%; }
+    .free-courses-area .single-course-item a:hover {
+      color: #FF0000; }
 
 /** responsive css **/
 /* XL Device :1200px. */
@@ -2619,43 +2756,105 @@ label {
 /* MD Device :768px. */
 /* Extra small Device. */
 /* SM Small Device :550px. */
+.about-us-area .about-info h2 {
+  font-size: 48px;
+  color: #303030;
+  font-weight: 400;
+  line-height: 60px;
+  margin-bottom: 30px; }
+  .about-us-area .about-info h2 span {
+    display: block;
+    font-weight: 600; }
+
+.about-us-area .about-info .desc {
+  padding-right: 30px;
+  margin-bottom: 40px; }
+  .about-us-area .about-info .desc p {
+    font-size: 16px;
+    color: #303030;
+    line-height: 30px; }
+
+.about-us-area .about-info .theme-btn a {
+  color: #fff;
+  width: 168px;
+  font-weight: 500;
+  text-transform: capitalize;
+  height: 48px;
+  padding: 0;
+  line-height: 48px;
+  font-size: 16px;
+  background-color: #1273EB;
+  border-color: #1273EB;
+  margin-right: 20px; }
+  .about-us-area .about-info .theme-btn a.outline {
+    background-color: transparent;
+    border: 1.5px solid #0161cd;
+    color: #0161cd; }
+    .about-us-area .about-info .theme-btn a.outline:hover {
+      color: #fff; }
+  .about-us-area .about-info .theme-btn a:hover {
+    border: 1.5px solid #0161cd;
+    background-color: #0161cd; }
+
+/** responsive css **/
+/* XL Device :1200px. */
+/* LG Device :992px. */
+/* MD Device :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-info {
+    margin-bottom: 50px; } }
+
+/* Extra small Device. */
+@media (max-width: 767px) {
+  .about-us-area .about-info h2 {
+    font-size: 25px;
+    color: #303030;
+    font-weight: 400;
+    line-height: 35px;
+    margin-bottom: 15px; }
+  .about-info {
+    margin-bottom: 30px; }
+  .about-us-area .about-info .theme-btn a {
+    width: 153px; } }
+
+/* SM Small Device :550px. */
 .footer-top-ads {
   text-align: center; }
 
 .custom-pagination {
-  margin-bottom: 30px;
   display: block;
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 21px 0 18px; }
   .custom-pagination ul {
     text-align: center; }
     .custom-pagination ul li {
       display: inline;
-      margin-right: 5px; }
+      margin-right: 0; }
       .custom-pagination ul li span.current {
         color: #fff;
         background-color: #000;
-        padding: 10px 20px;
         border: 1px solid #000;
-        display: inline-block; }
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px; }
       .custom-pagination ul li span.dots {
         padding: 10px 20px;
         display: inline-block; }
       .custom-pagination ul li a {
         color: #000;
         border: 1px solid transparent;
-        padding: 10px 20px;
         text-decoration: none;
-        display: inline; }
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px; }
         .custom-pagination ul li a:hover {
-          border: 1px solid #000; }
-        .custom-pagination ul li a.prev {
-          border: 1px solid #000; }
-        .custom-pagination ul li a.next {
-          border: 1px solid #000; }
+          color: #fff;
+          background: #000; }
         .custom-pagination ul li a.prev:hover, .custom-pagination ul li a.next:hover {
           color: #fff;
-          background: #000;
-          border: 1px solid #000; }
+          background: #000; }
 
 /** footer-area  **/
 .footer-area {

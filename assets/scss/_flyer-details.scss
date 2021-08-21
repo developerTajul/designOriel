@@ -24,6 +24,27 @@
     }
 
     .flyer-details{
+        h3{
+            font-size: 24px;
+            font-weight: 400;
+            color: #1273EB;
+            margin-bottom: 25px;
+            line-height: 1;
+            margin-top: -3px;
+            a{
+                text-decoration: none;
+                position:relative;
+                &::before{
+                    content: "\f121";
+                    font-family: 'flaticon';
+                    position: absolute;
+                    top: 50%;
+                    left: 105%;
+                    font-size: 40px;
+                    transform: translateY(-50%);
+                }
+            }
+        }
         .flyer-thumb{
 
         }
@@ -31,16 +52,21 @@
             .flyer-status{
                 span{
                     background-color: #1373EB;
-                    padding: 8px 85px;
+                    padding: 0;
                     border-radius: 5px;
                     color: #fff;
                     display: inline-block;
-                    font-weight: 600;
+                    font-weight: 400;
                     text-transform: uppercase;
+                    width: 215px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    font-size: 16px;
                 }
-                span.premium{
-                    padding: 8px 65px;
-                }
+                // span.premium{
+                //     padding: 8px 65px;
+                // }
             }
             .social-profiles{
                 ul {
@@ -78,15 +104,16 @@
                 a{
                     background-color: #4AD395;
                     border-color: #4AD395;
-                    padding: 15px 30px;
-                    border-radius: 7px;
+                    border-radius: 5px;
                     color: #fff;
                     text-decoration: none;
                     text-transform: capitalize;
-                    font-size: 16px;
+                    font-size: 24px;
                     font-weight: 500;
                     display: block;
                     text-align: center;
+                    height: 70px;
+                    line-height: 70px;
                 }
             }
         }

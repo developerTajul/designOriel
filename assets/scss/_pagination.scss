@@ -1,18 +1,20 @@
 .custom-pagination{
-    margin-bottom: 30px;
     display: block;
     overflow: hidden;
+    padding: 21px 0 18px;
     ul{
         text-align: center;
         li{
             display: inline;
-            margin-right: 5px;
+            margin-right: 0;
             span.current{
                 color: #fff;
                 background-color: #000;
-                padding: 10px 20px; 
-                border:1px solid #000;
+                border: 1px solid #000;
                 display: inline-block;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
             }
             span.dots{
                 padding: 10px 20px; 
@@ -21,24 +23,24 @@
             a{
                 color: #000;
                 border:1px solid transparent;
-                padding: 10px 20px;
                 text-decoration: none;
-                display: inline;
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
                 &:hover{
-                    border:1px solid #000;
+                    color: #fff;
+                    background: #000;
                 }
                 &.prev{
-                    border:1px solid #000;
                 }
                 &.next{
-                    border:1px solid #000;
                 }
                 &.prev:hover,
                 &.next:hover                
                 {
                     color: #fff;
                     background: #000;
-                    border:1px solid #000;
                 }
             }
 
