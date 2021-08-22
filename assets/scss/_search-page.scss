@@ -270,17 +270,56 @@
 @media (max-width: 767px) {
     .portfolio-menu {
         float: left !important;
-        margin-bottom: 35px;
+        margin: 0 0 35px;
     }
     .search-page-area .search-menu button {
-        padding: 10px 20px;
-        margin-left: 0px;
-        margin-right: 5px;
+        background-color: transparent;
+        border: 1px solid #303030;
+        color: #303030;
+        margin-left: 0;
+        font-size: 16px;
+        width: 110px;
+        height: 40px;
+    }
+    .advanced-search-area .advanced-search .search-box-wrapper .select-box-wrap .select-cat {
+        background-color: transparent;
+        font-weight: 400;
+        padding: 0 20px 0 0;
+        border: 1px solid transparent;
+        height: 78px;
+        line-height: 78px;
+        border-radius: 0;
+        float: none;
+        display: inline-block;
+    }
+
+    .advanced-search-area .advanced-search .search-box-wrapper .select-box-wrap .select-cat ul {
+        width: 351px;
+        border: 0 solid transparent;
+        border-radius: 5px;
+        left: -116px;
     }
 }
 
 /* SM Small Device :550px. */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
 
+    .search-page-area .search-menu button {
+        background-color: transparent;
+        border: 1px solid #303030;
+        color: #303030;
+        margin-left: 0;
+        font-size: 16px;
+        width: 148px;
+        height: 40px;
+        margin-right: 5px;
+    }
 
+
+    .advanced-search-area .advanced-search .search-box-wrapper .select-box-wrap .select-cat ul {
+        width: 517px;
+        border: 0 solid transparent;
+        border-radius: 5px;
+        left: -197px;
+    }
 }

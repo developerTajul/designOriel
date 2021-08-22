@@ -100,7 +100,7 @@
                 border-radius: 0 0 5px 5px;
                 li{
                     border-bottom: 1px solid #CCCCCC;
-                    padding: 16px 25px; 
+                    padding: 16.4px 25px; 
                     .heading{
                         float: left;
                         width: 120px;
@@ -132,25 +132,48 @@
 
 /* LG Device :992px. */
 @media (min-width: 992px) and (max-width: 1200px) {
-
+    .courses-details-area .course-overview-area .buy-info a {
+        width: 180px;
+    }
+    .courses-details-area .course-overview-area .buy-info span {
+        width: 180px;
+    }
 }
 
 
 /* MD Device :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
-
+    .courses-details-area .course-overview-area .buy-info a {
+        width: 335px;
+    }
+    .courses-details-area .course-overview-area .buy-info span {
+        width: 335px;
+    }
 
 }
 
 
 /* Extra small Device. */
 @media (max-width: 767px) {
-
+    .courses-details-area .course-overview-area .buy-info a {
+        width: 170px;
+    }
+    .courses-details-area .course-overview-area .buy-info span {
+        width: 170px;
+    }
+    .courses-details-area .course-overview-area .course-content ul li .heading {
+        width: 119px;
+    }
 }
 
 /* SM Small Device :550px. */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-
+    .courses-details-area .course-overview-area .buy-info a {
+        width: 250px;
+    }
+    .courses-details-area .course-overview-area .buy-info span {
+        width: 250px;
+    }
 
 }
 

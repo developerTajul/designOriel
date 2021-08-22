@@ -35,14 +35,14 @@
                 margin-right: 20px;
                 &.outline{
                     background-color: transparent;
-                    border: 1.5px solid #0161cd;
+                    border: 2px solid #0161cd;
                     color: #0161cd;
                     &:hover{
                         color: #fff;
                     }
                 }
                 &:hover{
-                    border: 1.5px solid #0161cd;
+                    border: 2px solid #0161cd;
                     background-color: #0161cd;
                 }
             }

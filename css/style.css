@@ -711,13 +711,48 @@ label {
 @media (max-width: 767px) {
   .portfolio-menu {
     float: left !important;
-    margin-bottom: 35px; }
+    margin: 0 0 35px; }
   .search-page-area .search-menu button {
-    padding: 10px 20px;
-    margin-left: 0px;
-    margin-right: 5px; } }
+    background-color: transparent;
+    border: 1px solid #303030;
+    color: #303030;
+    margin-left: 0;
+    font-size: 16px;
+    width: 110px;
+    height: 40px; }
+  .advanced-search-area .advanced-search .search-box-wrapper .select-box-wrap .select-cat {
+    background-color: transparent;
+    font-weight: 400;
+    padding: 0 20px 0 0;
+    border: 1px solid transparent;
+    height: 78px;
+    line-height: 78px;
+    border-radius: 0;
+    float: none;
+    display: inline-block; }
+  .advanced-search-area .advanced-search .search-box-wrapper .select-box-wrap .select-cat ul {
+    width: 351px;
+    border: 0 solid transparent;
+    border-radius: 5px;
+    left: -116px; } }
 
 /* SM Small Device :550px. */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .search-page-area .search-menu button {
+    background-color: transparent;
+    border: 1px solid #303030;
+    color: #303030;
+    margin-left: 0;
+    font-size: 16px;
+    width: 148px;
+    height: 40px;
+    margin-right: 5px; }
+  .advanced-search-area .advanced-search .search-box-wrapper .select-box-wrap .select-cat ul {
+    width: 517px;
+    border: 0 solid transparent;
+    border-radius: 5px;
+    left: -197px; } }
+
 /** section-heading style 1 **/
 .section-heading.style-1 h2 {
   font-size: 30px;
@@ -783,7 +818,9 @@ label {
 /* MD Device :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
   .section-heading.style-3 p span {
-    display: inline-block; } }
+    display: inline-block; }
+  .section-heading.style-3 p {
+    line-height: 25px; } }
 
 /* Extra small Device. */
 @media (max-width: 767px) {
@@ -791,6 +828,9 @@ label {
     font-size: 32px; }
   .section-heading.style-3 p span {
     display: inline-block; }
+  .section-heading.style-3 p {
+    color: #fff;
+    line-height: 25px; }
   .section-heading.style-3 h2 {
     font-size: 32px; }
   .cta-area.style-3 .cta-text p span {
@@ -1144,15 +1184,15 @@ label {
     color: #303030;
     text-transform: capitalize; }
   .best-selling-products-area .best-selling-products {
-    margin: 0 -5px; }
+    margin: 0 -11px; }
     .best-selling-products-area .best-selling-products .single-best-item {
-      padding: 0 5px; }
+      padding: 0 11px; }
       .best-selling-products-area .best-selling-products .single-best-item img {
         border-radius: 5px; }
   .best-selling-products-area .best-selling-products-style-2 {
-    margin: 0 -5px; }
+    margin: 0 -11px; }
     .best-selling-products-area .best-selling-products-style-2 .single-best-item {
-      padding: 0 5px; }
+      padding: 0 11px; }
       .best-selling-products-area .best-selling-products-style-2 .single-best-item img {
         border-radius: 5px; }
 
@@ -1787,7 +1827,7 @@ label {
     border-radius: 0 0 5px 5px; }
     .courses-details-area .course-overview-area .course-content ul li {
       border-bottom: 1px solid #CCCCCC;
-      padding: 16px 25px; }
+      padding: 16.4px 25px; }
       .courses-details-area .course-overview-area .course-content ul li .heading {
         float: left;
         width: 120px;
@@ -1802,9 +1842,35 @@ label {
 /** responsive css **/
 /* XL Device :1200px. */
 /* LG Device :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .courses-details-area .course-overview-area .buy-info a {
+    width: 180px; }
+  .courses-details-area .course-overview-area .buy-info span {
+    width: 180px; } }
+
 /* MD Device :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+  .courses-details-area .course-overview-area .buy-info a {
+    width: 335px; }
+  .courses-details-area .course-overview-area .buy-info span {
+    width: 335px; } }
+
 /* Extra small Device. */
+@media (max-width: 767px) {
+  .courses-details-area .course-overview-area .buy-info a {
+    width: 170px; }
+  .courses-details-area .course-overview-area .buy-info span {
+    width: 170px; }
+  .courses-details-area .course-overview-area .course-content ul li .heading {
+    width: 119px; } }
+
 /* SM Small Device :550px. */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .courses-details-area .course-overview-area .buy-info a {
+    width: 250px; }
+  .courses-details-area .course-overview-area .buy-info span {
+    width: 250px; } }
+
 /* ----------------------------------
     Testimonial Section 
  ------------------------------------ */
@@ -2352,10 +2418,15 @@ label {
 
 /* SM Small Device :550px. */
 /** flayer-details-area ***/
+.flayer-details-area .service-item-active .single-brand-item img {
+  border-radius: 5px; }
+
 .flayer-details-area .services-nav {
   margin: 0 -5px; }
   .flayer-details-area .services-nav .single-service-item {
     padding: 0 5px; }
+    .flayer-details-area .services-nav .single-service-item .service-thumb img {
+      border-radius: 5px; }
 
 .flayer-details-area .flyer-details h3 {
   font-size: 24px;
@@ -2367,14 +2438,19 @@ label {
   .flayer-details-area .flyer-details h3 a {
     text-decoration: none;
     position: relative; }
+    .flayer-details-area .flyer-details h3 a:hover {
+      color: #0099FF; }
     .flayer-details-area .flyer-details h3 a::before {
       content: "\f121";
       font-family: 'flaticon';
       position: absolute;
       top: 50%;
       left: 105%;
-      font-size: 40px;
+      font-size: 25px;
       transform: translateY(-50%); }
+
+.flayer-details-area .flyer-details .flyer-thumb img {
+  border-radius: 5px; }
 
 .flayer-details-area .flyer-details .flyer-meta-info .flyer-status span {
   background-color: #1373EB;
@@ -2402,9 +2478,9 @@ label {
       text-align: center;
       display: inline-block;
       border-radius: 5px;
-      color: #C9C9C8;
+      color: #484848;
       border: 1px solid #CCCCCC;
-      font-size: 14px; }
+      font-size: 20px; }
       .flayer-details-area .flyer-details .flyer-meta-info .social-profiles ul li a:hover {
         color: #fff;
         background: #1273EB;
@@ -2420,11 +2496,20 @@ label {
   text-decoration: none;
   text-transform: capitalize;
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 600;
   display: block;
   text-align: center;
   height: 70px;
-  line-height: 70px; }
+  line-height: 70px;
+  position: relative; }
+  .flayer-details-area .flyer-details .flyer-download .theme-btn a.free::before {
+    content: "\f120";
+    font-family: flaticon !important;
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    font-size: 35px;
+    transform: translateY(-50%); }
 
 .flayer-details-area .flyer-details .flyer-desc {
   background-repeat: no-repeat;
@@ -2490,7 +2575,27 @@ label {
 
 /** responsive css **/
 /* XL Device :1200px. */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .flayer-details-area .flyer-details .flyer-download .theme-btn a.free::before {
+    left: 90px; }
+  .flayer-details-area .flyer-details .flyer-download .theme-btn a {
+    padding-left: 45px; }
+  .flayer-details-area .flyer-details .flyer-desc ul li:last-child span {
+    height: 24px; } }
+
 /* LG Device :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .flayer-details-area .flyer-details .flyer-download .theme-btn a {
+    padding-left: 45px; }
+  .flayer-details-area .flyer-details .flyer-desc ul li:last-child span {
+    height: 24px; }
+  .flayer-details-area .flyer-details .flyer-meta-info .flyer-status span {
+    width: 90px; }
+  .flayer-details-area .flyer-details .flyer-download .theme-btn a.free::before {
+    left: 63px; }
+  .flyer-content-desc {
+    padding-right: 25px; } }
+
 /* MD Device :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
   .flayer-details-area .services-nav {
@@ -2498,18 +2603,26 @@ label {
   .flayer-details-area .flyer-details .flyer-desc ul li:last-child span {
     height: inherit; }
   .best-selling-products-area .section-heading h2 {
-    font-size: 30px; } }
+    font-size: 30px; }
+  .flyer-content-desc {
+    margin-bottom: 35px;
+    padding: 0; } }
 
 /* Extra small Device. */
 @media (max-width: 767px) {
   .flayer-details-area .services-nav {
     margin: 0 -5px 30px; }
-  .flayer-details-area .flyer-details .flyer-meta-info .flyer-status span {
-    padding: 8px 50px; }
   .service-item-active i.slick-arrow {
     width: 40px;
     height: 40px;
-    line-height: 40px; } }
+    line-height: 40px; }
+  .flyer-content-desc {
+    margin-bottom: 35px;
+    padding: 0; }
+  .flayer-details-area .flyer-details .flyer-meta-info .flyer-status span {
+    width: 145px; }
+  .flayer-details-area .flyer-details .flyer-download .theme-btn a.free::before {
+    left: 65px; } }
 
 /* SM Small Device :550px. */
 /** contact-form-area **/
@@ -2788,12 +2901,12 @@ label {
   margin-right: 20px; }
   .about-us-area .about-info .theme-btn a.outline {
     background-color: transparent;
-    border: 1.5px solid #0161cd;
+    border: 2px solid #0161cd;
     color: #0161cd; }
     .about-us-area .about-info .theme-btn a.outline:hover {
       color: #fff; }
   .about-us-area .about-info .theme-btn a:hover {
-    border: 1.5px solid #0161cd;
+    border: 2px solid #0161cd;
     background-color: #0161cd; }
 
 /** responsive css **/
